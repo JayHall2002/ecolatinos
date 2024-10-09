@@ -4,4 +4,4 @@ This project will consist of four Pages:
 - About Us
 - Impact Page
 - Our Work
-- Donations 
+- Donations :)
