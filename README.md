@@ -4,7 +4,7 @@ This project will consist of four Pages:
 - About Us
 - Impact Page
 - Our Work
-- Donations 
+- Donations :)
 
 This project will modify the website in such a way that the current state of the website is reflected 
 from EcoLatinos' social media feeds.
