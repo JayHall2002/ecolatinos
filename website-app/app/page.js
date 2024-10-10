@@ -1,9 +1,10 @@
-import Image from "next/image";
+import Navbar from "../../website-app/app/components/navbar";
 
-export default function Home() {
-  return (
-    <div className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-3xl font-bold underline">Home Page</h1>
-    </div>
-  );
-}
+export default function Home () {
+    return(
+        <>
+          <h1>Home page</h1>
+          <Navbar />
+        </>
+    );
+};
