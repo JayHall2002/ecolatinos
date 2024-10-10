@@ -6,7 +6,7 @@ export default function Navbar () {
         <nav className="bg-white-800 text-blue py-4">
             <div className="container mx-auto flex  justify-between items-center">
                 <Link href="/" passHref>
-                    <h1 className="text-4xl text-blue-400 hover:scale-110 hover:text-gray-900 font-bold">EcoLatinos</h1>
+                    <h1 className="text-4xl text-green-600 hover:scale-110 hover:text-green-900 font-bold">EcoLatinos</h1>
                 </Link>
                 <ul className="flex space-x-8">
                     <li>
@@ -14,7 +14,7 @@ export default function Navbar () {
                             <span className="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
                             before:bottom-0 before:left-0 before:bg-black
                             before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-                            before:transition before:ease-in-out before:duration-700 hover:text-blue-400 ">
+                            before:transition before:ease-in-out before:duration-700 hover:text-blue-700 ">
                                 Home
                             </span>
                         </Link>
@@ -24,7 +24,7 @@ export default function Navbar () {
                             <span className="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
                             before:bottom-0 before:left-0 before:bg-black
                             before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-                            before:transition before:ease-in-out before:duration-700 hover:text-blue-400">
+                            before:transition before:ease-in-out before:duration-700 hover:text-green-600">
                                 About Us
                             </span>
                         </Link>
@@ -34,7 +34,7 @@ export default function Navbar () {
                             <span className="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
                             before:bottom-0 before:left-0 before:bg-black
                             before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-                            before:transition before:ease-in-out before:duration-700 hover:text-blue-400">
+                            before:transition before:ease-in-out before:duration-700 hover:text-blue-600">
                                 Donations
                             </span>
                         </Link>
@@ -44,7 +44,7 @@ export default function Navbar () {
                             <span className="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
                             before:bottom-0 before:left-0 before:bg-black
                             before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-                            before:transition before:ease-in-out before:duration-700 hover:text-blue-400">
+                            before:transition before:ease-in-out before:duration-700 hover:text-green-600">
                                 Contact Us
                             </span>
                         </Link>
@@ -54,7 +54,7 @@ export default function Navbar () {
                             <span className="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
                             before:bottom-0 before:left-0 before:bg-black
                             before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-                            before:transition before:ease-in-out before:duration-700 hover:text-blue-400">
+                            before:transition before:ease-in-out before:duration-700 hover:text-blue-600">
                                 Our Impact
                             </span>
                         </Link>
