@@ -9,3 +9,15 @@ This project will consist of four Pages:
 
 This project will modify the website in such a way that the current state of the website is reflected 
 from EcoLatinos' social media feeds.
+
+# How to Run the Code
+## First
+Navigate to the "webiste-app" directory
+## Second
+Install necessary packages by typing "npm install" in the terminal
+## Third 
+Run the devlopment server by typing "npm run dev" in the terminal
+## Fourth
+Go to your browser of choice and type "localhost:3000"
+
+## Happy Coding 
