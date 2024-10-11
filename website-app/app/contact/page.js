@@ -30,6 +30,17 @@ export default function Contact () {
                     </div>
                 </Link>
             </div>
+            {/* Phone Number + Other Contact Information */}
+            <div className="mt-8 translate-y-8">
+                <h2 className="text-3xl font-sans font-bold text-center text-blue-600">
+                    Contact Information
+                </h2>
+                <div className="flex space-x-12 justify-center 
+                font-sans text-green-600 text-xl font-bold translate-y-12">
+                    <h3 className="hover:scale-125 hover:text-green-900">240.832.6090</h3>
+                    <h3 className="hover:scale-125 hover:text-green-900">info@ecolatinos.org</h3>
+                </div>
+            </div>
         </div>
     );
 };
