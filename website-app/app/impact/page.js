@@ -15,7 +15,7 @@ export default function Impact () {
 function Header() {
   return (
     <header>
-      <h1>Our Impact</h1>
+      <h1 className="text-3xl font-sans text-center">Our Impact</h1>
       <p>See how we're making a difference.</p>
     </header>
   );
