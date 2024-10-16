@@ -1,5 +1,5 @@
-import { useState } from "react";
 import Navbar from "../components/navbar.js";
+import ecolatinos_work from '../../ecolatinos_work.jpg'
 
 export default function Impact () {
     return(
@@ -15,13 +15,17 @@ export default function Impact () {
 function Paragraph1() {
   return (
     <p>
-      EcoLatinos has helped plant 54 trees in and around Saint Mary's of Landover's church, school 
-      and parking lot.
+      EcoLatinos has completed projects in areas like Tree planting, cleaning up the Anacostia Northwest Branch, 
+      providing outreach consulting services for Hispanic communities in the Mid-Atlantic region. They have also 
+      expanded their audience base. 
     </p>
+
+   
   )
 }
 
 function Header() {
+  // Make the header have some styles.
   const myStyle = {
     color: "white",
     backgroundColor: "Green",
@@ -39,6 +43,7 @@ function Header() {
 }
 
 function Footer() {
+  // Make the footer have certain styles. 
   const footerStyle = {
     color: "white",
     backgroundColor: "Green",
