@@ -1,6 +1,17 @@
 import Navbar from "../components/navbar.js";
-import wheatonhigh from "wheaton_high_panel.jpg"
+import wheatonhigh from "../../app/images/wheaton_high_panel.jpg"
 
+const work = [
+  'On May 2nd, we attended the Tenacious Turtle Ceremony to celebrate our partnership with the International High School at Largo for the Youth Environmental After School Program.',
+  'On May 8th, EcoLatinos spread word about the Free Environmental summer camp.'
+]
+
+function List() {
+  const listItems = work.map(task => 
+    <li style={{fontFamily: "Arial", color:"black", margin: '10px'}}>{task}</li>
+  );
+  return <ul>{listItems}</ul>
+}
 
 export default function Impact () {
     return(
@@ -10,7 +21,11 @@ export default function Impact () {
           <Paragraph1 />
 
           <SubHeader1 />
+          <Image1 />
           <Paragraph2 />
+
+          <SubHeader2 />
+          <List />
           <Footer />
         </>
     );
@@ -18,41 +33,46 @@ export default function Impact () {
 
 function Paragraph1() {
   return (
-    <p>
+    <p style={{fontFamily: "Arial", color:"black", margin: '10px'}}>
       EcoLatinos has completed projects in areas like Tree planting, cleaning up the Anacostia Northwest Branch, 
       providing outreach consulting services for Hispanic communities in the Mid-Atlantic region. They have also 
-      expanded their audience base. 
+      expanded their audience base using many of the programs they paticipated in. 
     </p>
   );
 }
 
 function SubHeader1() {
   return (
-    <h1 style={{color: "black", backgroundColor:"lightblue"}}> 2024 Youth Environmental Summer camp program </h1>
+    <h1 style={{color: "black", backgroundColor:"lightblue", 
+      fontFamily: "Arial", margin: "10px", padding: "10px"}}> 2024 Youth Environmental Summer camp program 
+    </h1>
   )
+}
+
+function Image1() {
+  return (
+    <img src={wheatonhigh} alt="Wheaton High School Work" />
+  );
 }
 
 function Paragraph2() {
   return (
-    <p>
+    <p style={{fontFamily: "Arial", color:"black", margin: '10px'}}>
       The 2024 Youth Environmental Summer camp program occured from July 8th to July 19th, 2024 for the 
-      high-school students from Price George's and Montgomery counties in Maryland. 
+      high-school students from Price George's and Montgomery counties in Maryland. In this program students learned, 
+      explored, enjoyed and became inspired to protect the environment.
     </p>
   )
 }
 
-
-// This allows us to access data from a user.
-function GetFacebookData() {
-  const accessToken = "EAAPUDZAlrZAkUBO42gLYpBDjrlDashPispIcYbMIGVQVvs0KYussG69KVHVhH8ehLGTpd1v97ktDSb0ugbHcY9SS9yABTItEZCq5hVa9QvBxFk0fZC7CTdJ0HqpeUAqnhgW3wyYQZBPoI3y2729j9yOjbgdF4Fy0N9iwwpLAsvKvtHIWwy9DmkPjWnSI7vchrJOA5wZC64RwhzuihxNgZDZD";
-  const userId = "2790045887835785";
-  // Fetch the data from Facebook Graphs API.
-  return fetch(`https://graph.facebook.com/v21.0/${userId}?access_token=${accessToken}`)
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-  });
+function SubHeader2() {
+  return (
+    <h1 style={{color: "black", backgroundColor:"lightblue", 
+      fontFamily: "Arial", margin: "10px", padding: "10px"}}> Tenacious Turtle Ceremony 
+    </h1>
+  )
 }
+
 
 function Header() {
   // Make the header have some styles.
