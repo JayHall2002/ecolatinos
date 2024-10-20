@@ -1,19 +1,8 @@
 import Navbar from "../components/navbar.js";
 import wheatonhigh from "../../app/images/wheaton_high_panel.jpg"
 import Image from "next/image.js";
-
-const work = [
-  'On May 2nd, we attended the Tenacious Turtle Ceremony to celebrate our partnership with the International High School at Largo for the Youth Environmental After School Program.',
-  'EcoLatinos participated in an Earth Day event on April 22, 2024',
-  'On May 8th, EcoLatinos spread word about the Free Environmental summer camp.'
-]
-
-function List() {
-  const listItems = work.map(task => 
-    <li style={{fontFamily: "Arial", color:"black", margin: '10px'}}>{task}</li>
-  );
-  return <ul>{listItems}</ul>
-}
+import Carousel from "./Carousel.js"
+import data from "./data.js"
 
 export default function Impact () {
     return(
@@ -23,11 +12,11 @@ export default function Impact () {
           <Paragraph1 />
 
           <SubHeader1 />
-          <Image1 />
+          <ImageCarousel />
           <Paragraph2 />
 
           <SubHeader2 />
-          <List />
+          
           <Footer />
         </>
     );
@@ -52,9 +41,9 @@ function SubHeader1() {
 }
 
 // Rendering the image is failing.
-function Image1() {
+function ImageCarousel() {
   return (
-    <Image src={wheatonhigh} alt="Wheaton High School Work" width={350} height={350}/>
+   <Carousel data={data} /> 
   );
 }
 
