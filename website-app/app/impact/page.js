@@ -1,8 +1,10 @@
 import Navbar from "../components/navbar.js";
 import wheatonhigh from "../../app/images/wheaton_high_panel.jpg"
+import Image from "next/image.js";
 
 const work = [
   'On May 2nd, we attended the Tenacious Turtle Ceremony to celebrate our partnership with the International High School at Largo for the Youth Environmental After School Program.',
+  'EcoLatinos participated in an Earth Day event on April 22, 2024',
   'On May 8th, EcoLatinos spread word about the Free Environmental summer camp.'
 ]
 
@@ -49,9 +51,10 @@ function SubHeader1() {
   )
 }
 
+// Rendering the image is failing.
 function Image1() {
   return (
-    <img src={wheatonhigh} alt="Wheaton High School Work" />
+    <Image src={wheatonhigh} alt="Wheaton High School Work" width={350} height={350}/>
   );
 }
 
