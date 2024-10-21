@@ -60,22 +60,22 @@ export default function Navbar () {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/impact" passHref>
-                            <span className="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-                            before:bottom-0 before:left-0 before:bg-black
-                            before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-                            before:transition before:ease-in-out before:duration-700 hover:text-blue-600">
-                                EN Version
-                            </span>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/impact" passHref>
+                        <Link href="/impact" locale="es" passHref>
                             <span className="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
                             before:bottom-0 before:left-0 before:bg-black
                             before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
                             before:transition before:ease-in-out before:duration-700 hover:text-blue-600">
                                 ES Version
+                            </span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/impact" locale="en" passHref>
+                            <span className="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+                            before:bottom-0 before:left-0 before:bg-black
+                            before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+                            before:transition before:ease-in-out before:duration-700 hover:text-blue-600">
+                                EN Version
                             </span>
                         </Link>
                     </li>
