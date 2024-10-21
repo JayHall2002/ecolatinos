@@ -1,0 +1,47 @@
+/*page.css*/
+
+body{
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    margin: 20px 0;
+}
+
+#header{
+    font-size: x-large;
+}
+#treesImage{
+    width: 100%; /* Width is full screen */
+    height: 150px; /* Making height very short */
+    object-fit: cover; /* Crop the image while covering the area */
+    overflow: hidden;
+}
+
+ 
+#header {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+  
+.text-center {
+    text-align: center;
+}
+  
+button:hover {
+    background-color: #357ABD;
+}
+  
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }

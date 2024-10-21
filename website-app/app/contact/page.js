@@ -23,7 +23,7 @@ export default function Contact() {
                         <Image
                             src={victor}
                             alt="Victor Profile Picture"
-                            className="rounded-full h-48 w-48 hover:scale-125 hover:transition hover:ease-in-out hover:duration-700"
+                            className="rounded-full h-48 w-48 hover:scale-125 hover:transition hover:ease-in-out hover:duration-700 border-2 border-blue-600 shadow-2xl"
                             onMouseEnter={() => setHoveredProfile("Victor")} // Set hovered profile to Victor
                             onMouseLeave={() => setHoveredProfile(null)} // Reset hovered profile
                         />
@@ -39,7 +39,7 @@ export default function Contact() {
                         <Image
                             src={emily}
                             alt="Emily Profile Picture"
-                            className="rounded-full h-48 w-48 hover:scale-125 hover:transition hover:ease-in-out hover:duration-700"
+                            className="rounded-full h-48 w-48 hover:scale-125 hover:transition hover:ease-in-out hover:duration-700 border-2 border-green-600 shadow-2xl"
                             onMouseEnter={() => setHoveredProfile("Emily")} // Set hovered profile to Emily
                             onMouseLeave={() => setHoveredProfile(null)} // Reset hovered profile
                         />
@@ -55,7 +55,7 @@ export default function Contact() {
                         <Image
                             src={ruby}
                             alt="Ruby Profile Picture"
-                            className="rounded-full h-48 w-48 hover:scale-125 hover:transition hover:ease-in-out hover:duration-700"
+                            className="rounded-full h-48 w-48 hover:scale-125 hover:transition hover:ease-in-out hover:duration-700 border-2 border-blue-600 shadow-2xl"
                             onMouseEnter={() => setHoveredProfile("Ruby")} // Set hovered profile to Ruby
                             onMouseLeave={() => setHoveredProfile(null)} // Reset hovered profile
                         />
@@ -71,7 +71,7 @@ export default function Contact() {
                         <Image
                             src={sandi}
                             alt="Sandi Profile Picture"
-                            className="rounded-full h-48 w-48 hover:scale-125 hover:transition hover:ease-in-out hover:duration-700"
+                            className="rounded-full h-48 w-48 hover:scale-125 hover:transition hover:ease-in-out hover:duration-700 border-2 border-green-600 shadow-2xl"
                             onMouseEnter={() => setHoveredProfile("Sandi")} // Set hovered profile to Sandi
                             onMouseLeave={() => setHoveredProfile(null)} // Reset hovered profile
                         />
@@ -87,7 +87,8 @@ export default function Contact() {
                 <div className="flex justify-center translate-y-8 animate-pulse ">
                     <div className="w-1/2 flex justify-center">
                         <div className="flex flex-col items-center">
-                            <p className="text-blue-600 font-semibold ">
+                            {/* Ruby Bio */}
+                            <p className="text-blue-600 font-semibold">
                                 Ruby R. Stemmle is the founder and CEO of EcoLatinos. 
                                 Ruby started EcoLatinos following her passion for the conservation of our madre tierra and 
                                 her commitment to social and environmental justice, by engaging and advocating for 
@@ -106,6 +107,7 @@ export default function Contact() {
                 <div className="flex justify-center translate-y-8 animate-pulse">
                     <div className="w-1/2 flex justify-center">
                         <div className="flex flex-col items-center">
+                            {/* Emily Bio */}
                             <p className="text-lg font-semibold text-green-600">
                             She currently serves as Vice President of Development and Philanthropy for Potomac Riverkeeper Network. 
                             Emily received her undergraduate degree in Political Science from California State University, 
@@ -121,6 +123,7 @@ export default function Contact() {
                 <div className="flex justify-center translate-y-8 animate-pulse">
                     <div className="w-1/2 flex justify-center">
                         <div className="flex flex-col items-center">
+                            {/* Victor Bio */}
                             <p className="text-lg font-semibold text-blue-600">
                             The principal owner of the Law Office of Victor R. Ramirez, LLC and is a 
                             seasoned trial attorney. Mr. Ramirez received his Bachelor’s Degree from Frostburg State 
@@ -138,6 +141,7 @@ export default function Contact() {
                 <div className="flex justify-center translate-y-8 animate-pulse">
                     <div className="w-1/2 flex justify-center">
                         <div className="flex flex-col items-center">
+                            {/* Sandi Bio */}
                             <p className="text-lg font-semibold text-green-600">
                             Sandi holds a bachelor’s degree in English from the University of Kansas, 
                             and a Master’s degree in Curriculum and Instruction from 
