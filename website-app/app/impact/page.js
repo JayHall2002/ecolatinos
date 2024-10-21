@@ -1,8 +1,8 @@
 import Navbar from "../components/navbar.js";
-import wheatonhigh from "../../app/images/wheaton_high_panel.jpg"
-import Image from "next/image.js";
 import Carousel from "./Carousel.js"
 import data from "./data.js"
+import "./imgCarouselStyle.css"
+
 
 export default function Impact () {
     return(
@@ -10,37 +10,47 @@ export default function Impact () {
           <Navbar />
           <Header />
           <Paragraph1 />
-
+          <IntroductionAdd />
           <SubHeader1 />
           <ImageCarousel />
-          <Paragraph2 />
-
+          <div style={{ margin: '85px' }}></div>
           <SubHeader2 />
-          
+          <Paragraph2 />
           <Footer />
         </>
     );
 };
 
+// Introduction paragraphs for the Impact page.
 function Paragraph1() {
   return (
     <p style={{fontFamily: "Arial", color:"black", margin: '10px'}}>
       EcoLatinos has completed projects in areas like Tree planting, cleaning up the Anacostia Northwest Branch, 
       providing outreach consulting services for Hispanic communities in the Mid-Atlantic region. They have also 
-      expanded their audience base using many of the programs they paticipated in. 
+      expanded their audience base using many of the programs they paticipated in. Their efforts in stormwater mitigation 
+      systems have been concerned in the communities - Aspen Hill and Wheaton. 
     </p>
   );
+}
+
+function IntroductionAdd() {
+  return (
+    <p style={{fontFamily: "Arial", color:"black", margin:'10px'}}>
+      EcoLatinos has also provided bilingual outreach to the Year of the Anacostia project. This yearlong celebration 
+      honored the history of the Anacostia river, its communities and the progress toward its restoration. 
+    </p>
+  )
 }
 
 function SubHeader1() {
   return (
     <h1 style={{color: "black", backgroundColor:"lightblue", 
-      fontFamily: "Arial", margin: "10px", padding: "10px"}}> 2024 Youth Environmental Summer camp program 
+      fontFamily: "Arial", margin: "10px", padding: "10px"}}> EcoLatinos' Impact on Environment 
     </h1>
   )
 }
 
-// Rendering the image is failing.
+// This carousel is failing somehow.
 function ImageCarousel() {
   return (
    <Carousel data={data} /> 
@@ -50,9 +60,8 @@ function ImageCarousel() {
 function Paragraph2() {
   return (
     <p style={{fontFamily: "Arial", color:"black", margin: '10px'}}>
-      The 2024 Youth Environmental Summer camp program occured from July 8th to July 19th, 2024 for the 
-      high-school students from Price George's and Montgomery counties in Maryland. In this program students learned, 
-      explored, enjoyed and became inspired to protect the environment.
+      The Organization attended the Tenacious Turtle Ceremony to celebrate their partnership with the 
+      International High School at Largo for the Youth Environmental After School Program.
     </p>
   )
 }
@@ -84,10 +93,8 @@ function Header() {
 function Footer() {
   // Make the footer have certain styles. 
   const footerStyle = {
-    color: "white",
-    backgroundColor: "Green",
-    padding: "10px",
-    fontFamily: "Sans-Serif"
+    color: "white", backgroundColor: "Green",
+    padding: "10px", fontFamily: "Sans-Serif"
   }
 
   return (

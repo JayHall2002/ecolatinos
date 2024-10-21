@@ -4,14 +4,18 @@ import summer_camp from "./../images/summer_camp.jpg"
 
 export const data = [
     {
+        id: 1,
+        // img is the exact hyperlink for the image. 
         img: wheatonhigh,
         title: "Work at Wheaton High School"
     },
     {
+        id: 2,
         img: earth_day,
         title: "Work related to Earth Day"
     }, 
     {
+        id: 3,
         img: summer_camp,
         title: "Summer Camp"
     }
