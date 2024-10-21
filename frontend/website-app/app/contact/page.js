@@ -186,6 +186,15 @@ export default function Contact() {
                     <h3 className="hover:scale-125 hover:text-green-900">info@ecolatinos.org</h3>
                 </div>
             </div>
+            {/* Footer section at the bottom of the page */}
+            <footer className="fixed bottom-0 w-full" style={{
+                    backgroundColor: "#3ea23e", // Green background color
+                    color: "white", // White text color
+                    textAlign: "center", // Centered text
+                    padding: "20px" // Padding inside the footer
+                }}>
+                    <p>© 2024 EcoLatinos - All Rights Reserved</p> {/* Copyright notice */}
+            </footer>
         </div>
     );
 }

@@ -33,6 +33,7 @@ export default function Donations() {
           <a href="mailto:info@ecolatinos.org">info@ecolatinos.org</a> {/* Mailto link for sending emails */}
         </address>
       </div>
+      
     </div>
   );
 }
