@@ -17,6 +17,7 @@ export default function AboutUs () {
     );
 };
 
+// Areas of work for the organization.
 const areasOfWork = [
   {
     id: 1, 
@@ -40,7 +41,7 @@ const areasOfWork = [
   }
 ];
 
-
+// Introductory paragraph that explains what the organization does on large scale.
 function Description() {
   return ( 
     <p style={{fontFamily: "Arial", color: "black", margin: "10px"}}> EcoLatinos was born out of our passion for the environment and love for our Latino community. 
@@ -58,6 +59,7 @@ function DescriptionP2() {
   )
 }
 
+// Render the list of work areas
 function WorkList() {
   const listItems = areasOfWork.map(work => 
     <li style={{padding: '10px', margin:"10px"}}>{work.area}</li>
