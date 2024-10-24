@@ -12,6 +12,10 @@ import Image from "next/image";
 
 export default function AboutUs () {
   const [isMounted, setIsMounted] = useState(false);
+  const [showDEIBox, setShowDEIBox] = useState(false);
+  const toggleDEIBox = () => {
+    setShowDEIBox(!showDEIBox);
+  }
   useEffect(() => {
     setIsMounted(true);
   }, []);   
@@ -63,7 +67,7 @@ export default function AboutUs () {
             </div>
             
         </div>
-        <div className={isMounted ? "fade-in" : ""}>
+        <div className={`${isMounted ? "fade-in" : ""} `} style={{ zIndex: "10" }}>
           <div className=" text-blue-500 text-4xl translate-y-24 font-mono font-semibold  mt-5 " style={{ padding: "5px", width: "100%", marginBottom: "20px", position: "relative"}}>
             <h1>What We Are Up To</h1>
             <div style={{ display: "flex", justifyContent: "center", marginBottom: "20px", height: "400px", width: "500px", margin: "auto"  }}>
@@ -96,10 +100,22 @@ export default function AboutUs () {
               <p className="mt-2 font-mono text-md text-blue-500 hover:text-green-600">Sandi</p>
             </div>
           </div>
+          <div className="font-mono text-4xl text-center text-blue-500 relative font-semibold translate-y-48 tracking-widest" style={{ padding: "5px", width: "100%", marginTop: "20px", position: "relative", marginTrim: "auto"}}>
+            <h1>Our Commitment to DEI</h1>
+             
+            <div className="text-center text-sm">
+              <button className="rounded border-2 border-blue-500 bg-white-500 hover:bg-blue-700 hover:text-white text-blue font-bold py-2 px-4 animate-pulse"
+              style={{ width: "200px", height: "50px", top: "50px", right: "0",marginTop: "20px" }}
+              onClick={toggleDEIBox}>Click To Learn More</button>
+            </div>
+            
+              
+          </div>
+          
         </div>
+        
         
         
       </>
     )
-
 }
