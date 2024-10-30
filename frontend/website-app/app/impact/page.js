@@ -2,7 +2,7 @@ import Navbar from "../components/navbar.js";
 import Carousel from "./Carousel.js"
 import data from "./data.js"
 import "./imgCarouselStyle.css"
-
+import Video from "./Video.js";
 
 export default function Impact() {
     return (
@@ -13,11 +13,11 @@ export default function Impact() {
             {/* Render the main header for the Impact page with specific styles */}
             <Header />
 
+            {/* Render the video on landscaping onto the page. */}
+            <Video />
+
             {/* Render the first paragraph of the introduction */}
             <Paragraph1 />
-
-            {/* Render additional introduction content */}
-            <IntroductionAdd />
 
             {/* Render the first subheader on the page */}
             <SubHeader1 />
@@ -42,7 +42,7 @@ export default function Impact() {
  */
 function Paragraph1() {
   return (
-    <p style={{color:"black", margin: '10px'}} class='paragraph'>
+    <p style={{color:"black", margin: '10px'}} className='paragraph'>
       {/* Text content for the first paragraph of the introduction */}
       EcoLatinos has completed projects in areas like Tree planting, cleaning up the Anacostia Northwest Branch, 
       providing outreach consulting services for Hispanic communities in the Mid-Atlantic region. They have also 
@@ -50,28 +50,6 @@ function Paragraph1() {
       systems have been concerned in the communities - Aspen Hill and Wheaton. 
     </p>
   );
-}
-
-/**
- * Function to render additional introduction content after the first paragraph on the Impact page.
- * 
- * This function renders a paragraph element that contains text describing the organization's bilingual outreach 
- * to the Year of the Anacostia project. The text is styled with black color and a margin of 10px.
- * 
- * @return {JSX.Element} The paragraph element.
- */
-function IntroductionAdd() {
-  return (
-    <p style={{color:"black", margin:'10px'}} class="paragraph">
-      {/* Text content for the additional introduction paragraph */}
-      {/* 
-        This text explains that EcoLatinos has provided bilingual outreach to the Year of the Anacostia project. 
-        This yearlong celebration honored the history of the Anacostia river, its communities and the progress toward its restoration. 
-      */}
-      EcoLatinos has also provided bilingual outreach to the Year of the Anacostia project. This yearlong celebration 
-      honored the history of the Anacostia river, its communities and the progress toward its restoration. 
-    </p>
-  )
 }
 
 /**
