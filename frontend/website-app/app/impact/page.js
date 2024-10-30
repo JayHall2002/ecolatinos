@@ -100,7 +100,7 @@ function Other() {
 function Header() {
   // Make the header have some styles.
   const myStyle = { color: "white", backgroundColor: "Green",
-    padding: "10px", textalign: "center", margin:"10px", class:'main-header'
+    padding: "10px", textalign: "center", margin:"10px", className:'main-header'
   };
 
   return (

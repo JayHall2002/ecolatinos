@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 /* Styles for the main content on Video. */
 #video {
     position:relative;
@@ -20,12 +21,15 @@
     width: 100%;
     height: 100%;
     top: 40vh;
-    color: #0000;
+    color: #ffff;
+    font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
 
 .hero .content h1 {
     font-size: 4rem;
-    color: #0000;
+    color: #ffff;
 }
 
 .hero p {
@@ -33,7 +37,7 @@
     font-weight: 200;
     text-transform: uppercase;
     margin-bottom: 1.6rem;
-    color: #0000;
+    color: #ffff;
 }
 
 /* This line of code modifies the font size and margins if the window is minimized. */
