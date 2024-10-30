@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 /* Styles for the main content on Video. */
 #video {
     position:relative;
@@ -22,9 +22,7 @@
     height: 100%;
     top: 40vh;
     color: #ffff;
-    font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    font: "mono";
 }
 
 .hero .content h1 {
