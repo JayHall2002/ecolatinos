@@ -4,6 +4,7 @@ import Carousel from "./Carousel.js"
 import data from "./data.js"
 import "./imgCarouselStyle.css"
 import Video from "./Video.js";
+import MyBarChart from "./MyBarChart.js";
 
 export default function Impact() {
     return (
@@ -29,7 +30,7 @@ export default function Impact() {
             {/* Add a margin for spacing between sections */}
             <div style={{ margin: '85px' }}></div>
 
-
+            <MyBarChart />
             <Other />
             {/* Render the footer at the bottom of the page */}
             <Footer />
