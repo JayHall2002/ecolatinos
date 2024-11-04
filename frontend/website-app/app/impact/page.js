@@ -1,3 +1,4 @@
+"use client"
 import Navbar from "../components/navbar.js";
 import Carousel from "./Carousel.js"
 import data from "./data.js"
@@ -27,6 +28,7 @@ export default function Impact() {
 
             {/* Add a margin for spacing between sections */}
             <div style={{ margin: '85px' }}></div>
+
 
             <Other />
             {/* Render the footer at the bottom of the page */}
