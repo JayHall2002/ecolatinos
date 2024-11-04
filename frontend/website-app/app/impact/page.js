@@ -42,7 +42,7 @@ export default function Impact() {
  */
 function Paragraph1() {
   return (
-    <p style={{color:"black", margin: '10px'}} className='paragraph'>
+    <p style={{color:"black", margin: '10px'}} className='font-mono font-semibold  mt-5'>
       {/* Text content for the first paragraph of the introduction */}
       EcoLatinos has completed projects in areas like Tree planting, cleaning up the Anacostia Northwest Branch, 
       providing outreach consulting services for Hispanic communities in the Mid-Atlantic region. They have also 
@@ -88,7 +88,7 @@ function ImageCarousel() {
  */
 function Other() {
   return (
-    <p className="other">
+    <p className="font-mono font-semibold  mt-5">
       The organization has made more efforts in reducing global warning than any county 
       or state department. It has also had more success in reaching out to Latino landscapers, which 
       has been subsequently overlooked by other organizations.
