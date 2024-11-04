@@ -88,7 +88,7 @@ function ImageCarousel() {
  */
 function Other() {
   return (
-    <p className="font-mono font-semibold  mt-5">
+    <p style={{color:"black", margin: '10px'}} className="font-mono font-semibold  mt-5">
       The organization has made more efforts in reducing global warning than any county 
       or state department. It has also had more success in reaching out to Latino landscapers, which 
       has been subsequently overlooked by other organizations.
