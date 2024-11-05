@@ -2,7 +2,7 @@ import Navbar from "../components/navbar.js";
 import Carousel from "./Carousel.js"
 import data from "./data.js"
 import "./imgCarouselStyle.css"
-
+import Video from "./Video.js";
 
 export default function Impact() {
     return (
@@ -13,11 +13,11 @@ export default function Impact() {
             {/* Render the main header for the Impact page with specific styles */}
             <Header />
 
+            {/* Render the video on landscaping onto the page. */}
+            <Video />
+
             {/* Render the first paragraph of the introduction */}
             <Paragraph1 />
-
-            {/* Render additional introduction content */}
-            <IntroductionAdd />
 
             {/* Render the first subheader on the page */}
             <SubHeader1 />
@@ -28,12 +28,7 @@ export default function Impact() {
             {/* Add a margin for spacing between sections */}
             <div style={{ margin: '85px' }}></div>
 
-            {/* Render the second subheader on the page */}
-            <SubHeader2 />
-
-            {/* Render the second paragraph of the introduction */}
-            <Paragraph2 />
-
+            <Other />
             {/* Render the footer at the bottom of the page */}
             <Footer />
         </>
@@ -47,7 +42,7 @@ export default function Impact() {
  */
 function Paragraph1() {
   return (
-    <p style={{fontFamily: "Arial", color:"black", margin: '10px'}}>
+    <p style={{color:"black", margin: '10px'}} className='font-mono font-semibold  mt-5'>
       {/* Text content for the first paragraph of the introduction */}
       EcoLatinos has completed projects in areas like Tree planting, cleaning up the Anacostia Northwest Branch, 
       providing outreach consulting services for Hispanic communities in the Mid-Atlantic region. They have also 
@@ -55,28 +50,6 @@ function Paragraph1() {
       systems have been concerned in the communities - Aspen Hill and Wheaton. 
     </p>
   );
-}
-
-/**
- * Function to render additional introduction content after the first paragraph on the Impact page.
- * 
- * This function renders a paragraph element that contains text describing the organization's bilingual outreach 
- * to the Year of the Anacostia project. The text is styled with black color and a margin of 10px.
- * 
- * @return {JSX.Element} The paragraph element.
- */
-function IntroductionAdd() {
-  return (
-    <p style={{fontFamily: "Arial", color:"black", margin:'10px'}}>
-      {/* Text content for the additional introduction paragraph */}
-      {/* 
-        This text explains that EcoLatinos has provided bilingual outreach to the Year of the Anacostia project. 
-        This yearlong celebration honored the history of the Anacostia river, its communities and the progress toward its restoration. 
-      */}
-      EcoLatinos has also provided bilingual outreach to the Year of the Anacostia project. This yearlong celebration 
-      honored the history of the Anacostia river, its communities and the progress toward its restoration. 
-    </p>
-  )
 }
 
 /**
@@ -91,7 +64,7 @@ function IntroductionAdd() {
 function SubHeader1() {
   return (
     <h1 style={{color: "black", backgroundColor:"lightblue", 
-      fontFamily: "Arial", margin: "10px", padding: "10px"}}>
+      margin: "10px", padding: "10px"}} className='sub-heading'>
       {/* Text content for the first subheader */}
       EcoLatinos' Impact on Environment 
     </h1>
@@ -113,28 +86,13 @@ function ImageCarousel() {
  * 
  * @return {JSX.Element} The paragraph element.
  */
-function Paragraph2() {
-  // Return the paragraph element.
+function Other() {
   return (
-    // Render the paragraph element with the specified styles.
-    <p style={{fontFamily: "Arial", color:"black", margin: '10px'}}>
-      {/* 
-        Text content for the second paragraph of the introduction.
-        This text explains that EcoLatinos attended the Tenacious Turtle Ceremony 
-        to celebrate their partnership with the International High School at Largo 
-        for the Youth Environmental After School Program. 
-      */}
-      The Organization attended the Tenacious Turtle Ceremony to celebrate their partnership with the 
-      International High School at Largo for the Youth Environmental After School Program.
+    <p className="font-mono font-semibold  mt-5">
+      The organization has made more efforts in reducing global warning than any county 
+      or state department. It has also had more success in reaching out to Latino landscapers, which 
+      has been subsequently overlooked by other organizations.
     </p>
-  );
-}
-
-function SubHeader2() {
-  return (
-    <h1 style={{color: "black", backgroundColor:"lightblue", 
-      fontFamily: "Arial", margin: "10px", padding: "10px"}}> Tenacious Turtle Ceremony 
-    </h1>
   )
 }
 
@@ -142,14 +100,12 @@ function SubHeader2() {
 function Header() {
   // Make the header have some styles.
   const myStyle = { color: "white", backgroundColor: "Green",
-    padding: "10px", fontFamily: "Sans-Serif",
-    textalign: "center"
+    padding: "10px", textalign: "center", margin:"10px", className:'main-header'
   };
 
   return (
     <header>
       <h1 style={myStyle}>Our Impact</h1>
-      <p>See how we're making a difference.</p>
     </header>
   );
 }
@@ -158,8 +114,8 @@ function Footer() {
   // Make the footer have certain styles. 
   const footerStyle = {
     color: "white", backgroundColor: "Green",
-    padding: "10px", fontFamily: "Sans-Serif"
-  }
+    padding: "10px"
+  };
 
   return (
     <footer>
