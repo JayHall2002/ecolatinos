@@ -96,7 +96,7 @@ export default function Home() {
                                 
                             </div>
                             {isShowingLandScapeImage && (
-                                <div className="fixed w-screen h-screen top-0 right-10 backdrop-blur-sm flex items-center justify-center z-50">
+                                <div className="fixed w-screen h-screen top-0 right-0 bg-gray-400 bg-opacity-50 flex items-center justify-center z-50">
                                     <div className="bg-white rounded-lg shadow-lg p-4 w-1/2">
                                         <h2 className="text-2xl font-mono font-bold mb-4">Landscaping Program</h2>
                                         <p className="text-gray-600">Insert Description Here.</p>
@@ -121,7 +121,7 @@ export default function Home() {
                                 
                             </div>
                             {isShowingYouthProgram && (
-                                <div className="fixed w-screen h-screen top-0 right-10 backdrop-blur-sm flex items-center justify-center z-50">
+                                <div className="fixed w-screen h-screen top-0 right-0 bg-gray-400 bg-opacity-50 flex items-center justify-center z-50">
                                     <div className="bg-white rounded-lg shadow-lg p-4 w-1/2">
                                         <h2 className="text-2xl font-mono font-bold mb-4">Youth Program</h2>
                                         <p className="text-gray-600">Insert Description Here.</p>
@@ -146,7 +146,7 @@ export default function Home() {
                                 
                             </div>
                             {isShowingOutreachProgram && (
-                                <div className="fixed w-screen h-screen top-0 right-10 backdrop-blur-sm flex items-center justify-center z-50">
+                                <div className="fixed w-screen h-screen top-0 right-0 bg-gray-400 bg-opacity-50 flex items-center justify-center z-50">
                                     <div className="bg-white rounded-lg shadow-lg p-4 w-1/2">
                                         <h2 className="text-2xl font-mono font-bold mb-4">Outreach Program</h2>
                                         <p className="text-gray-600">Insert Description Here.</p>
@@ -170,7 +170,7 @@ export default function Home() {
                                 
                             </div>
                             {isShowingPartnershipProgram && (
-                                <div className="fixed w-screen h-screen top-0 right-10 backdrop-blur-sm flex items-center justify-center z-50">
+                                <div className="fixed w-screen h-screen top-0 right-0 bg-gray-400 bg-opacity-50 flex items-center justify-center z-50">
                                     <div className="bg-white rounded-lg shadow-lg p-4 w-1/2">
                                         <h2 className="text-2xl font-mono font-bold mb-4">Partnership Program</h2>
                                         <p className="text-gray-600">Insert Description Here.</p>
@@ -193,7 +193,7 @@ export default function Home() {
                                 
                             </div>
                             {isShowingGetInvolved && (
-                                <div className="fixed w-screen h-screen top-0 right-10 backdrop-blur-sm flex items-center justify-center z-50">
+                                <div className="fixed w-screen h-screen top-0 right-0 bg-gray-400 bg-opacity-50 flex items-center justify-center z-50">
                                     <div className="bg-white rounded-lg shadow-lg p-4 w-1/2">
                                         <h2 className="text-2xl font-mono font-bold mb-4">Join Us</h2>
                                         <p className="text-gray-600">Insert Description Here.</p>
