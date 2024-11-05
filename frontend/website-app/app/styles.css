@@ -11,7 +11,7 @@
   
   .slide-up {
     transform: translateY(100%);
-    animation: slideUp 5s ease-in forwards;
+    animation: slideUp 3s ease-in forwards;
 
   }
   

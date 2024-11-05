@@ -14,12 +14,12 @@ export default function Contact() {
             
 
             {/* Background Image */}
-            <div className="absolute inset-0">
+            <div className="absolute inset-0 " style={{ marginTop: "40px", opacity: 0, animation: "fadeIn 3s ease-in forwards", animationDelay: "1s" }}>
                 <Image src={bgpic} alt="Contact Background" layout="fill" objectFit="cover" className="opacity-70 blur-sm" />
             </div>
 
             {/* Contact Form Container */}
-            <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-5">
+            <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-5" style={{ marginTop: "40px", opacity: 0, animation: "fadeIn 3s ease-in forwards", animationDelay: "2s" }}>
                 <h1 className="text-5xl font-bold font-mono text-white mb-8 text-center">Get in Touch With EcoLatinos</h1>
                 <p className="text-lg text-white mb-4 font-mono text-center">We'd love to hear from you! Please fill out the form below.</p>
 

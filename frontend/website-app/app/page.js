@@ -55,13 +55,13 @@ export default function Home() {
                 <Navbar />
                 
                 {isMounted && (
-                    <div className="fade-in flex justify-start space-x-16 italic" style={{ marginTop: "20px", opacity: 0, animation: "fadeIn 9s ease-in forwards", animationDelay: "3s" }}>
+                    <div className="fade-in flex justify-start space-x-16 italic" style={{ marginTop: "20px", opacity: 0, animation: "fadeIn 2s ease-in forwards", animationDelay: "1s" }}>
                         <h1 className="text-4xl font-mono font-semibold text-gray-600">Our Mission</h1>  
                     </div>
                         
                 )}
                 {isMounted && (
-                    <div className="fade-in flex flex-row justify-start space-x-16" style={{ marginTop: "20px", opacity: 0, animation: "fadeIn 9s ease-in forwards", animationDelay: "6s" }}>
+                    <div className="fade-in flex flex-row justify-start space-x-16" style={{ marginTop: "20px", opacity: 0, animation: "fadeIn 2s ease-in forwards", animationDelay: "3s" }}>
                         <div className="flex flex-col">
                             <h2 className="text-2xl font-mono font-semibold tracking-widest leading-loose text-green-600 text-left">Amplify the voice of the Latino Communities in their pursuit of social and environmental justice through outreach, education and advocacy across the Chesapeake Bay region.</h2>
                             <Link href="/aboutus" passHref>  
@@ -74,7 +74,7 @@ export default function Home() {
                     </div>
                 )}
                 {isMounted && (
-                    <div className="fade-in" style={{ marginTop: "40px", opacity: 0, animation: "fadeIn 9s ease-in forwards", animationDelay: "9s" }}>
+                    <div className="fade-in" style={{ marginTop: "40px", opacity: 0, animation: "fadeIn 9s ease-in forwards", animationDelay: "3s" }}>
                         <div className="fade-in flex flex-row justify-start space-x-16 italic">
                             <h1 className="text-4xl font-mono font-semibold text-gray-600">Our Programs</h1> 
                         </div>
