@@ -42,7 +42,7 @@ export default function Donation() {
       <Navbar /> {/* Navbar component */}
       
       {isMounted && (
-        <div className="relative w-full h-screen" style={{marginTop: "0px", opacity: 0, animation: "fadeIn 9s ease-in forwards", animationDelay: "1s"}}>
+        <div className="relative w-full h-screen" style={{marginTop: "0px", opacity: 0, animation: "fadeIn 3s ease-in forwards", animationDelay: "1s"}}>
           {/* Background Image */}
           <Image 
             src={donatebg} 
