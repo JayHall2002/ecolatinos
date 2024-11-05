@@ -96,10 +96,14 @@ export default function Home() {
                                 
                             </div>
                             {isShowingLandScapeImage && (
-                                <div className="fixed w-screen h-screen top-0 right-0 bg-gray-400 bg-opacity-50 flex items-center justify-center z-50">
+                                <div className="fixed w-screen h-screen bottom-20 top-0 right-0 bg-gray-400 bg-opacity-50 flex items-center justify-center z-50">
                                     <div className="bg-white rounded-lg shadow-lg p-4 w-1/2">
                                         <h2 className="text-2xl font-mono font-bold mb-4">Landscaping Program</h2>
-                                        <p className="text-gray-600">Insert Description Here.</p>
+                                        <p className="text-gray-600 font-mono tracking-wider">
+                                            Funded by the National Fish and Wildlife Foundation (NFWF)
+                                            <br/><br/> Equitable landscaping was born out of a need to bridge a crucial gap in Chesapeake Bay's environmental training. Traditional programs overlook Spanish-speaking Latino landscapers, leaving them at a disadvantage. Our "Equitable Landscaping" initiative offers culturally relevant, Spanish-language training in green infrastructure, empowering Latinos as environmental stewards. Partnering with the Chesapeake Conservation Landscaping Council, we ensure inclusive education, enhancing skills and opportunities in the green job market while fostering environmental conservation and public health. Join to build a more diverse, skilled, and environmentally conscious community. 
+                                            <br/><br/>Participants receive a certification at the end of training to increase competitiveness in the job market, as well as obtain access to quality environmental training.
+                                        </p>
                                         <button 
                                             className="bg-blue-500 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md"
                                             onClick={() => setIsShowingLandScapeImage(false)}
@@ -124,7 +128,12 @@ export default function Home() {
                                 <div className="fixed w-screen h-screen top-0 right-0 bg-gray-400 bg-opacity-50 flex items-center justify-center z-50">
                                     <div className="bg-white rounded-lg shadow-lg p-4 w-1/2">
                                         <h2 className="text-2xl font-mono font-bold mb-4">Youth Program</h2>
-                                        <p className="text-gray-600">Insert Description Here.</p>
+                                        <p className="text-gray-600 font-mono tracking-wider">
+                                            Funded by the National Park Service Chesapeake Gateways Trust<br/><br/>
+                                            Latino and other minority youth have opportunities for environmental education, outdoor field trips, and green career exploration through year-long experiences! During the school year, an after-school component brings industry experts to foster diversity and inclusion in green careers. Then, students can participate in our summer camp. This program offers an array of destinations for high school students to have greater access to outdoors, be exposed to environmental experiences, and have fun! <br/><br/>
+                                            High school students from two schools in Prince George’s and Montgomery County, one in each county, participate in this educational opportunity. 
+
+                                        </p>
                                         <button 
                                             className="bg-blue-500 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md"
                                             onClick={() => setIsShowingYouthProgram(false)}
@@ -149,7 +158,9 @@ export default function Home() {
                                 <div className="fixed w-screen h-screen top-0 right-0 bg-gray-400 bg-opacity-50 flex items-center justify-center z-50">
                                     <div className="bg-white rounded-lg shadow-lg p-4 w-1/2">
                                         <h2 className="text-2xl font-mono font-bold mb-4">Outreach Program</h2>
-                                        <p className="text-gray-600">Insert Description Here.</p>
+                                        <p className="text-gray-600 font-mono tracking-wider">This partnership provides classes to Spanish-speaking church members about stormwater runoff and environmental education, followed by installations of rain barrels in the homes of training participants.<br/><br/>
+                                            Members of the church's youth program receive training while engaging in a storm drain mural project and two local cleanup activities that provide awareness and care of the environment.
+                                        </p>
                                         <button 
                                             className="bg-blue-500 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md"
                                             onClick={() => setIsShowingOutreachProgram(false)}
@@ -173,7 +184,13 @@ export default function Home() {
                                 <div className="fixed w-screen h-screen top-0 right-0 bg-gray-400 bg-opacity-50 flex items-center justify-center z-50">
                                     <div className="bg-white rounded-lg shadow-lg p-4 w-1/2">
                                         <h2 className="text-2xl font-mono font-bold mb-4">Partnership Program</h2>
-                                        <p className="text-gray-600">Insert Description Here.</p>
+                                        <p className="text-gray-600">EcoLatinos has partnered with several organizations located in the Chesapeake Bay region to promote Latino outreach and engagement. Some of these include:</p>
+                                            <li className="font-bold font-mono">University of Maryland Sea Grant</li>
+                                            <li className="font-bold font-mono">Potomac Riverkeeper Network water quality monitoring </li>
+                                            <li className="font-bold font-mono">Contractors Training Program in D.C. Spanish Catholic Center (SCC)</li>
+                                            <li className="font-bold font-mono">Catholic Charities, D.C.</li>
+                                            <li className="font-bold font-mono">Festival Del Rio Anacostia at Bladensburg Waterfront Park</li>
+                                            <li className="font-bold font-mono">National Housing Trust DOEE transition from gas to electrification focus group</li>
                                         <button 
                                             className="bg-blue-500 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md"
                                             onClick={() => setIsShowingPartnershipProgram(false)}
@@ -196,7 +213,7 @@ export default function Home() {
                                 <div className="fixed w-screen h-screen top-0 right-0 bg-gray-400 bg-opacity-50 flex items-center justify-center z-50">
                                     <div className="bg-white rounded-lg shadow-lg p-4 w-1/2">
                                         <h2 className="text-2xl font-mono font-bold mb-4">Join Us</h2>
-                                        <p className="text-gray-600">Insert Description Here.</p>
+                                        
                                         <button 
                                             className="bg-blue-500 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md"
                                             onClick={() => setIsShowingGetInvolved(false)}
