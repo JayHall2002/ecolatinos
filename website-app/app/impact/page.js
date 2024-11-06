@@ -39,6 +39,8 @@ function IntroductionAdd() {
       EcoLatinos has also provided bilingual outreach to the Year of the Anacostia project. This yearlong celebration 
       honored the history of the Anacostia river, its communities and the progress toward its restoration. 
     </p>
+
+   
   )
 }
 
