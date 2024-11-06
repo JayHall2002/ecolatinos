@@ -1,5 +1,5 @@
 import React from "react";
-import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, BarElement, Title, Tooltip, Legend, Filler, } from "chart.js";
+import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, BarElement, Title, Tooltip, Legend, Filler, plugins, } from "chart.js";
 import { Bar } from "react-chartjs-2";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, BarElement, Title, Tooltip, Legend, Filler );
@@ -22,35 +22,71 @@ const MyBarChart = () => {
             backgroundColor: 'rgb(54, 162, 235)',
         },
     ];
+    // This is the data that gets fed into grapph. Labels is for the X-axis and datasets is for the y-axis. 
     const data = {
         labels: labels,
         datasets: datasets,
     };
     const options = {
         scales: {
-        y: {
-            title: {
-            display: true,
-            text: "% of people who consider this a problem",
+            y: {
+                title: {
+                    display: true,
+                    text: "Environmental Issues",
+                    font: {
+                        size: 18, // Change the font size of y-axis ticks
+                    },
+                },
+                display: true,
+                beginAtZero: true,
+                max: 80,
+                ticks: {
+                    font: {
+                      size: 16, // Change the font size of y-axis ticks
+                    },
+                },
             },
-            display: true,
-            beginAtZero: true,
-            max: 100,
-        },
-        x: {
-            title: {
-            display: true,
-            text: "Environmental Issues",
+            x: {
+                // Add the title and modify the font size for the tick marks and the title label.
+                title: {
+                    display: true,
+                    text: "% of people who consider this a problem",
+                    font: {
+                        size: 16,
+                    }
+                },
+                display: true,
+                beginAtZero: true,
+                max: 80,
+                ticks: {
+                    font: {
+                      size: 16, // Change the font size of y-axis ticks
+                    },
+                },
             },
-            display: true,
-            beginAtZero: true,
-            max: 100,
         },
+        plugins: {
+            legend: {
+                position: 'right',
+                align: 'center',
+                labels: {
+                    font: {
+                        size: 18, // Change the font size of the legend labels
+                    },
+                },
+            },
+            title: {
+                display: true,
+                text: "Hispanics see more environmental problems in their communities than non-Hispanics",
+                font: {
+                    size: 18, 
+                },
+            }
         },
+        indexAxis: 'y'
     };
     return (
-        <div style={{ width: "1000px", alignItems:"center" }}>
-            <h1>Hispanics see more environmental problems in their communities than non-Hispanics</h1>
+        <div style={{display: 'flex', alignItems: 'center'}}>
             <Bar data={data} options={options} />
         </div>
     );

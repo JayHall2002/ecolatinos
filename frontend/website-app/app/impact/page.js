@@ -30,7 +30,11 @@ export default function Impact() {
             {/* Add a margin for spacing between sections */}
             <div style={{ margin: '85px' }}></div>
 
+            {/* Integrate a bar graph showing how much different populations care about environment. */}
+            <h1 style={{color:"black", margin: '10px', fontSize: '20px', alignItems: 'center'}} className='font-mono font-semibold  mt-5'>
+              Hispanics see more environmental problems in their communities than non-Hispanics </h1>
             <MyBarChart />
+
             <Other />
             {/* Render the footer at the bottom of the page */}
             <Footer />
@@ -91,7 +95,7 @@ function ImageCarousel() {
  */
 function Other() {
   return (
-    <p className="font-mono font-semibold  mt-5">
+    <p style={{color:"black", margin: '10px'}} className="font-mono font-semibold  mt-5">
       The organization has made more efforts in reducing global warning than any county 
       or state department. It has also had more success in reaching out to Latino landscapers, which 
       has been subsequently overlooked by other organizations.
