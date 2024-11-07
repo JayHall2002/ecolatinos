@@ -103,6 +103,7 @@ export default function Carousel({ data }) {
             <h2 className="carousel-title">
               {data[currentIndex].title || "Title"}
             </h2>
+
           </div>
         </>
       ) : (

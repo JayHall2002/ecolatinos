@@ -29,13 +29,14 @@ export default function Impact() {
 
             {/* Add a margin for spacing between sections */}
             <div style={{ margin: '85px' }}></div>
-
-            {/* Integrate a bar graph showing how much different populations care about environment. */}
-            <h1 style={{color:"black", margin: '10px', fontSize: '20px', alignItems: 'center'}} className='font-mono font-semibold  mt-5'>
-              Hispanics see more environmental problems in their communities than non-Hispanics </h1>
-            <MyBarChart />
-
             <Other />
+
+            <Paragraph2 />
+
+            <SubHeader2 />
+
+            <ImpactStatement />
+
             {/* Render the footer at the bottom of the page */}
             <Footer />
         </>
@@ -52,9 +53,8 @@ function Paragraph1() {
     <p style={{color:"black", margin: '10px'}} className='font-mono font-semibold  mt-5'>
       {/* Text content for the first paragraph of the introduction */}
       EcoLatinos has completed projects in areas like Tree planting, cleaning up the Anacostia Northwest Branch, 
-      providing outreach consulting services for Hispanic communities in the Mid-Atlantic region. They have also 
-      expanded their audience base using many of the programs they paticipated in. Their efforts in stormwater mitigation 
-      systems have been concerned in the communities - Aspen Hill and Wheaton. 
+      providing outreach consulting services for Hispanic communities in the Mid-Atlantic region. In addition to 
+      that, they have also expanded their audience base using many of the programs they paticipated in. 
     </p>
   );
 }
@@ -78,6 +78,14 @@ function SubHeader1() {
   )
 }
 
+function SubHeader2() {
+  return (
+    <h1 className='font-mono text-4xl text-blue-500 relative font-semibold'>
+      Statistics on Impact
+    </h1>
+  );
+}
+
 // This carousel is failing somehow.
 function ImageCarousel() {
   return (
@@ -98,11 +106,32 @@ function Other() {
     <p style={{color:"black", margin: '10px'}} className="font-mono font-semibold  mt-5">
       The organization has made more efforts in reducing global warning than any county 
       or state department. It has also had more success in reaching out to Latino landscapers, which 
-      has been subsequently overlooked by other organizations.
+      has been subsequently overlooked by other organizations. 
     </p>
   )
 }
 
+function Paragraph2() {
+  return (
+    <p style={{color:"black", margin: '10px'}} className="font-mono font-semibold  mt-5">
+      On Saturday October 5th, EcoLatinos kicked off the 2024 Equitable Sustainable Landscaping Training 
+      Program with its Spanish language session at the Hyattsville library. Landscapers delved into topics like stormwater management, 
+      best management practices, rain gardens, previous surfaces, and hands on activities. 
+    </p>
+  );
+}
+
+
+function ImpactStatement() {
+  return (
+    <p>
+      <span style={{color: "rgb(239, 130, 0)", fontSize: "2rem", textAlign:"right"}}>
+        7 in 10 Latinos have never been contacted by an organization working to 
+        reduce global warming.
+      </span>
+    </p>
+  );
+}
 
 function Header() {
   // Make the header have some styles.
