@@ -32,7 +32,7 @@ export default function Impact() {
             <Other />
 
             <Paragraph2 />
-
+            <Paragraph3 />
             <SubHeader2 />
 
             <ImpactStatement />
@@ -121,11 +121,21 @@ function Paragraph2() {
   );
 }
 
+function Paragraph3() {
+  return (
+    <p style={{color:"black", margin: '10px'}} className="font-mono font-semibold  mt-5">
+      EcoLatinos has partnerted with many schools in Price George's county to provide those school students knowledge on 
+      environmental preservation. Through these programs, the organization has inspired people to protect and conserve 
+      Mother Earth. Through the Youth Environmental Summer Camp program, the organization has also given students opportunities to 
+      learn.
+    </p>
+  )
+}
 
 function ImpactStatement() {
   return (
     <p>
-      <span style={{color: "rgb(239, 130, 0)", fontSize: "2rem", textAlign:"right"}}>
+      <span style={{color: "rgb(239, 130, 0)", fontSize: "2rem", textAlign:"right", margin: "20px"}}>
         7 in 10 Latinos have never been contacted by an organization working to 
         reduce global warming.
       </span>
