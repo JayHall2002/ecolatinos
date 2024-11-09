@@ -6,6 +6,9 @@ import "./imgCarouselStyle.css"
 import Video from "./Video.js";
 import MyBarChart from "./MyBarChart.js";
 
+import Statistic from "../images/statistic.png"
+import Image from "next/image";
+
 export default function Impact() {
     return (
         <>
@@ -33,9 +36,13 @@ export default function Impact() {
 
             <Paragraph2 />
             <Paragraph3 />
-            <SubHeader2 />
 
+            {/* Render Statistical information on the Organization's work. */}
+            <SubHeader2 />
+            <Image src={Statistic} alt="stat_img" width={400} height={400} />
             <ImpactStatement />
+
+            <ImpactStatement2 />
 
             {/* Render the footer at the bottom of the page */}
             <Footer />
@@ -135,12 +142,23 @@ function Paragraph3() {
 function ImpactStatement() {
   return (
     <p>
-      <span style={{color: "rgb(239, 130, 0)", fontSize: "2rem", textAlign:"right", margin: "20px"}}>
-        7 in 10 Latinos have never been contacted by an organization working to 
+      <span style={{color: "rgb(0,139,139)", fontSize: "2rem", textAlign:"right", margin: "20px"}}>
+        Latinos have never been contacted by an organization working to 
         reduce global warming.
       </span>
     </p>
   );
+}
+
+function ImpactStatement2() {
+  return (
+    <p>
+      <span style={{color: "rgb(0,139,139)", fontSize: "2rem", margin: "20px"}} textAlign={"center"}>
+        "EcoLatinos has contributed more than any other organization towards cleanliness of the Chesapeake Bay and has 
+        made efforts in improving water quality in all water bodies in the Mid Atlantic."
+      </span>
+    </p>
+  )
 }
 
 function Header() {
