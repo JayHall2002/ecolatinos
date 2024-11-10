@@ -35,14 +35,12 @@ export default function Impact() {
             <Other />
 
             <Paragraph2 />
-            <Paragraph3 />
 
             {/* Render Statistical information on the Organization's work. */}
             <SubHeader2 />
             <Image src={Statistic} alt="stat_img" width={400} height={400} />
             <ImpactStatement />
 
-            <ImpactStatement2 />
 
             <MyBarChart />
             {/* Render the footer at the bottom of the page */}
@@ -114,7 +112,9 @@ function Other() {
     <p style={{color:"black", margin: '10px'}} className="font-mono font-semibold  mt-5">
       The organization has made more efforts in reducing global warning than any county 
       or state department. It has also had more success in reaching out to Latino landscapers, which 
-      has been subsequently overlooked by other organizations. 
+      has been subsequently overlooked by other organizations. The organization has taken part in the 
+      Youth Environmental Summer Camp program which has helped students from schools in the Price George's county
+      area gain knowledge in areas like fishing, ecosystem preservation and many other areas. 
     </p>
   )
 }
@@ -122,28 +122,17 @@ function Other() {
 function Paragraph2() {
   return (
     <p style={{color:"black", margin: '10px'}} className="font-mono font-semibold  mt-5">
-      On Saturday October 5th, EcoLatinos kicked off the 2024 Equitable Sustainable Landscaping Training 
-      Program with its Spanish language session at the Hyattsville library. Landscapers delved into topics like stormwater management, 
-      best management practices, rain gardens, previous surfaces, and hands on activities. 
+      EcoLatinos has done culturally sensitive work with Spanish-speaking residents of the Chesapeake Bay region and 
+      has built a bridge that unites Hispanics and other environmentalists. The organization has encouraged members to enjoy 
+      nature while keeping waterways free of trash. 
     </p>
   );
-}
-
-function Paragraph3() {
-  return (
-    <p style={{color:"black", margin: '10px'}} className="font-mono font-semibold  mt-5">
-      EcoLatinos has partnerted with many schools in Price George's county to provide those school students knowledge on 
-      environmental preservation. Through these programs, the organization has inspired people to protect and conserve 
-      Mother Earth. Through the Youth Environmental Summer Camp program, the organization has also given students opportunities to 
-      learn.
-    </p>
-  )
 }
 
 function ImpactStatement() {
   return (
     <p>
-      <span style={{color: "rgb(0,139,139)", fontSize: "2rem", textAlign:"right", margin: "20px"}}>
+      <span style={{color: "rgb(0,139,139)", fontSize: "2rem", textalign:"right", margin: "20px"}}>
         Latinos have never been contacted by an organization working to 
         reduce global warming.
       </span>
@@ -154,7 +143,7 @@ function ImpactStatement() {
 function ImpactStatement2() {
   return (
     <p>
-      <span style={{color: "rgb(0,139,139)", fontSize: "2rem", margin: "20px"}} textAlign={"center"}>
+      <span style={{color: "rgb(0,139,139)", fontSize: "2rem", margin: "20px"}} textalign="center">
         "EcoLatinos has contributed more than any other organization towards cleanliness of the Chesapeake Bay and has 
         made efforts in improving water quality in all water bodies in the Mid Atlantic."
       </span>
