@@ -44,6 +44,7 @@ export default function Impact() {
 
             <ImpactStatement2 />
 
+            <MyBarChart />
             {/* Render the footer at the bottom of the page */}
             <Footer />
         </>
