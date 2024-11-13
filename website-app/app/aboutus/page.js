@@ -4,6 +4,7 @@ export default function AboutUs () {
     return(
         <>
           <Navbar />  
+<<<<<<< HEAD
           <h1 style={{color: "white", backgroundColor: "Green",
             padding: "10px", fontFamily: "Sans-Serif",
             textalign: "center", margin: "10px"}}>About Us</h1>  
@@ -13,10 +14,16 @@ export default function AboutUs () {
           <h2 style={{color: "white", backgroundColor:"Teal", padding: "10px", fontFamily: "Sans-Serif",
             textalign: "center", margin: "10px"}}>Areas of Work</h2>
           <WorkList />
+=======
+          <h1>About Us</h1>  
+          <Description />
+
+>>>>>>> 54b1bed (Added more content on impact page)
         </>
     );
 };
 
+<<<<<<< HEAD
 // Areas of work for the organization.
 const areasOfWork = [
   {
@@ -68,3 +75,10 @@ function WorkList() {
     <ul>{listItems}</ul>
   )
 }
+=======
+function Description() {
+  return ( 
+    <p> EcoLatinos was born out of our passion for the environment and love for our Latino community. </p>
+  );
+}
+>>>>>>> 54b1bed (Added more content on impact page)

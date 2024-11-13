@@ -1,8 +1,13 @@
+"use client"
 import Navbar from "../components/navbar.js";
 import Carousel from "./Carousel.js"
 import data from "./data.js"
 import "./imgCarouselStyle.css"
 import Video from "./Video.js";
+import MyBarChart from "./MyBarChart.js";
+
+import Statistic from "../images/statistic.png"
+import Image from "next/image";
 
 export default function Impact() {
     return (
@@ -27,8 +32,17 @@ export default function Impact() {
 
             {/* Add a margin for spacing between sections */}
             <div style={{ margin: '85px' }}></div>
-
             <Other />
+
+            <Paragraph2 />
+
+            {/* Render Statistical information on the Organization's work. */}
+            <SubHeader2 />
+            <Image src={Statistic} alt="stat_img" width={400} height={400} />
+            <ImpactStatement />
+
+
+            <MyBarChart />
             {/* Render the footer at the bottom of the page */}
             <Footer />
         </>
@@ -45,9 +59,8 @@ function Paragraph1() {
     <p style={{color:"black", margin: '10px'}} className='font-mono font-semibold  mt-5'>
       {/* Text content for the first paragraph of the introduction */}
       EcoLatinos has completed projects in areas like Tree planting, cleaning up the Anacostia Northwest Branch, 
-      providing outreach consulting services for Hispanic communities in the Mid-Atlantic region. They have also 
-      expanded their audience base using many of the programs they paticipated in. Their efforts in stormwater mitigation 
-      systems have been concerned in the communities - Aspen Hill and Wheaton. 
+      providing outreach consulting services for Hispanic communities in the Mid-Atlantic region. In addition to 
+      that, they have also expanded their audience base using many of the programs they paticipated in. 
     </p>
   );
 }
@@ -71,6 +84,14 @@ function SubHeader1() {
   )
 }
 
+function SubHeader2() {
+  return (
+    <h1 className='font-mono text-4xl text-blue-500 relative font-semibold'>
+      Statistics on Impact
+    </h1>
+  );
+}
+
 // This carousel is failing somehow.
 function ImageCarousel() {
   return (
@@ -88,14 +109,47 @@ function ImageCarousel() {
  */
 function Other() {
   return (
-    <p className="font-mono font-semibold  mt-5">
+    <p style={{color:"black", margin: '10px'}} className="font-mono font-semibold  mt-5">
       The organization has made more efforts in reducing global warning than any county 
       or state department. It has also had more success in reaching out to Latino landscapers, which 
-      has been subsequently overlooked by other organizations.
+      has been subsequently overlooked by other organizations. The organization has taken part in the 
+      Youth Environmental Summer Camp program which has helped students from schools in the Price George's county
+      area gain knowledge in areas like fishing, ecosystem preservation and many other areas. 
     </p>
   )
 }
 
+function Paragraph2() {
+  return (
+    <p style={{color:"black", margin: '10px'}} className="font-mono font-semibold  mt-5">
+      EcoLatinos has done culturally sensitive work with Spanish-speaking residents of the Chesapeake Bay region and 
+      has built a bridge that unites Hispanics and other environmentalists. The organization has encouraged members to enjoy 
+      nature while keeping waterways free of trash. 
+    </p>
+  );
+}
+
+function ImpactStatement() {
+  return (
+    <p>
+      <span style={{color: "rgb(0,139,139)", fontSize: "2rem", textalign:"right", margin: "20px"}}>
+        Latinos have never been contacted by an organization working to 
+        reduce global warming.
+      </span>
+    </p>
+  );
+}
+
+function ImpactStatement2() {
+  return (
+    <p>
+      <span style={{color: "rgb(0,139,139)", fontSize: "2rem", margin: "20px"}} textalign="center">
+        "EcoLatinos has contributed more than any other organization towards cleanliness of the Chesapeake Bay and has 
+        made efforts in improving water quality in all water bodies in the Mid Atlantic."
+      </span>
+    </p>
+  )
+}
 
 function Header() {
   // Make the header have some styles.

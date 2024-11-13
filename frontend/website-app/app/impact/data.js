@@ -20,7 +20,9 @@
 
 import wheatonhigh from "./../images/wheaton_high_panel.jpg";
 import earth_day from "./../images/earth_day.jpg";
-import summer_camp from "./../images/summer_camp.jpg";
+import landscape_training from "./../images/landscape_training.jpg";
+import hispanic_festival from "./../images/Hispanic_festival_sept.jpg";
+import childrens_day from "./../images/Children'sDay_brookside.jpg";
 
 const data = [
     {
@@ -32,18 +34,33 @@ const data = [
         // displayed.
         img: wheatonhigh,
         // The "title" property is a string that describes the image.
-        title: "Work at Wheaton High School"
+        title: "Work at Wheaton High School",
+        description: "A program was hosted in a Wheaton School."
     },
     {
         id: 2,
         img: earth_day,
-        title: "Work related to Earth Day"
+        title: "Work related to Earth Day",
+        description: "Earth Day and trash cleanup in Takoma Park, MD."
     },
     {
         id: 3,
-        img: summer_camp,
-        title: "Summer Camp"
-    }
+        img: landscape_training,
+        title: "Sustainable Landscaping Training in Hyattsville",
+        description: "EcoLatinos landscapers provided information on topics like stormwater management, rain gardens, best management practices, etc."
+    },
+    {
+        id: 4,
+        img: hispanic_festival,
+        title: "Hispanic festival",
+        description: "This festival took place in the Lane Manor Park on September 15th."
+    },
+    {
+        id: 6,
+        img: childrens_day,
+        title: "Children's Day at Brookside Gardens",
+        description: "Children's day at Brookside Gardens."
+    },
 ];
 
 export default data;
