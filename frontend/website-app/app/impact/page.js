@@ -14,15 +14,15 @@ export default function Impact() {
         <>
             {/* Render the navigation bar at the top of the page */}
             <Navbar />
-            
-            {/* Render the main header for the Impact page with specific styles */}
-            <Header />
 
             {/* Render the video on landscaping onto the page. */}
             <Video />
 
             {/* Render the first paragraph of the introduction */}
             <Paragraph1 />
+
+            {/* Render the second introductory paragraph. */}
+            <Paragraph2 />
 
             {/* Render the first subheader on the page */}
             <SubHeader1 />
@@ -32,19 +32,15 @@ export default function Impact() {
 
             {/* Add a margin for spacing between sections */}
             <div style={{ margin: '85px' }}></div>
-            <Other />
-
-            <Paragraph2 />
 
             {/* Render Statistical information on the Organization's work. */}
             <SubHeader2 />
-            <Image src={Statistic} alt="stat_img" width={400} height={400} />
+            <Image src={Statistic} alt="stat_img" width={400} height={400} style={{alignItems: "center"}}/>
             <ImpactStatement />
 
-
+            <ImpactStatement3 />
             <MyBarChart />
-            {/* Render the footer at the bottom of the page */}
-            <Footer />
+            
         </>
     );
 };
@@ -60,7 +56,24 @@ function Paragraph1() {
       {/* Text content for the first paragraph of the introduction */}
       EcoLatinos has completed projects in areas like Tree planting, cleaning up the Anacostia Northwest Branch, 
       providing outreach consulting services for Hispanic communities in the Mid-Atlantic region. In addition to 
-      that, they have also expanded their audience base using many of the programs they paticipated in. 
+      that, they have also expanded their audience base using many of the programs they paticipated in. The organization 
+      has made more efforts in reducing global warning than any county or state department. It has also had more 
+      success in reaching out to Latino landscapers, which has been subsequently overlooked by other organizations.
+    </p>
+  );
+}
+
+
+/**
+ * Function that renders the second introduction paragraph on the Impact page.
+ * @returns {JSX.Element}
+ */
+function Paragraph2() {
+  return (
+    <p style={{color:"black", margin: '10px'}} className="font-mono font-semibold  mt-5">
+      EcoLatinos has done culturally sensitive work with Spanish-speaking residents of the Chesapeake Bay region and 
+      has built a bridge that unites Hispanics and other environmentalists. The organization has encouraged members to enjoy 
+      nature while keeping waterways free of trash. 
     </p>
   );
 }
@@ -76,8 +89,7 @@ function Paragraph1() {
  */
 function SubHeader1() {
   return (
-    <h1 style={{color: "black", backgroundColor:"lightblue", 
-      margin: "10px", padding: "10px"}} className='sub-heading'>
+    <h1 className='font-mono text-4xl text-blue-500 relative font-semibold' style={{margin: "10px"}}>
       {/* Text content for the first subheader */}
       EcoLatinos' Impact on Environment 
     </h1>
@@ -86,7 +98,7 @@ function SubHeader1() {
 
 function SubHeader2() {
   return (
-    <h1 className='font-mono text-4xl text-blue-500 relative font-semibold'>
+    <h1 className='font-mono text-4xl text-blue-500 relative font-semibold' style={{margin: "10px", textAlign: "center"}}>
       Statistics on Impact
     </h1>
   );
@@ -112,22 +124,12 @@ function Other() {
     <p style={{color:"black", margin: '10px'}} className="font-mono font-semibold  mt-5">
       The organization has made more efforts in reducing global warning than any county 
       or state department. It has also had more success in reaching out to Latino landscapers, which 
-      has been subsequently overlooked by other organizations. The organization has taken part in the 
-      Youth Environmental Summer Camp program which has helped students from schools in the Price George's county
-      area gain knowledge in areas like fishing, ecosystem preservation and many other areas. 
+      has been subsequently overlooked by other organizations. 
     </p>
   )
 }
 
-function Paragraph2() {
-  return (
-    <p style={{color:"black", margin: '10px'}} className="font-mono font-semibold  mt-5">
-      EcoLatinos has done culturally sensitive work with Spanish-speaking residents of the Chesapeake Bay region and 
-      has built a bridge that unites Hispanics and other environmentalists. The organization has encouraged members to enjoy 
-      nature while keeping waterways free of trash. 
-    </p>
-  );
-}
+
 
 function ImpactStatement() {
   return (
@@ -151,29 +153,13 @@ function ImpactStatement2() {
   )
 }
 
-function Header() {
-  // Make the header have some styles.
-  const myStyle = { color: "white", backgroundColor: "Green",
-    padding: "10px", textalign: "center", margin:"10px", className:'main-header'
-  };
-
+function ImpactStatement3() {
   return (
-    <header>
-      <h1 style={myStyle}>Our Impact</h1>
-    </header>
-  );
+    <p>
+      <span className='font-mono text-4xl text-blue-500 relative font-semibold' style={{margin: "10px", textAlign: "center"}}>
+          Latinos are more concerned about global warming than non-Latinos.
+      </span>
+    </p>
+  )
 }
 
-function Footer() {
-  // Make the footer have certain styles. 
-  const footerStyle = {
-    color: "white", backgroundColor: "Green",
-    padding: "10px"
-  };
-
-  return (
-    <footer>
-      <p style={footerStyle}>Join us in making a difference!</p>
-    </footer>
-  );
-}

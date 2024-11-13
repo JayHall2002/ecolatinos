@@ -15,11 +15,6 @@ body {
     font-size: 5rem;
     margin: 2rem auto;
 }
-/* Styles for the sub headings and paragraphs. */
-.sub-heading {
-    margin: 0;
-    font: "mono";
-}
 
 .other {
     margin: 0;
