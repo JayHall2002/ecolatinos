@@ -5,9 +5,10 @@ import data from "./data.js"
 import "./imgCarouselStyle.css"
 import Video from "./Video.js";
 import MyBarChart from "./MyBarChart.js";
-
+import TotalDonationsChart from "./TotalDonationsChart.js";
 import Statistic from "../images/statistic.png"
 import Image from "next/image";
+
 
 export default function Impact() {
     return (
@@ -40,7 +41,7 @@ export default function Impact() {
 
             <ImpactStatement3 />
             <MyBarChart />
-            
+            <TotalDonationsChart />
         </>
     );
 };

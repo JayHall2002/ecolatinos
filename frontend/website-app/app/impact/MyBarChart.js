@@ -53,6 +53,7 @@ const MyBarChart = () => {
                     text: "People Category",
                     font: {
                         size: 16,
+                        color: "black"
                     }
                 },
                 display: true,
@@ -79,7 +80,7 @@ const MyBarChart = () => {
                 display: true,
                 text: "Global Warming is more important to Latinos than any other minority.",
                 font: {
-                    size: 18, 
+                    size: 28, 
                 },
             }
         },
@@ -87,7 +88,7 @@ const MyBarChart = () => {
     };
     // Display the Bar chart to screen.
     return (
-        <div style={{display: 'flex', alignItems: 'center'}}>
+        <div style={{display: 'flex', alignItems: 'center', width: '1200px', height: '800px'}}>
             <Bar data={data} options={options} />
         </div>
     );
