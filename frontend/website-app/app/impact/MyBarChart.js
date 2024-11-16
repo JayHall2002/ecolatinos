@@ -36,6 +36,7 @@ const MyBarChart = () => {
                     font: {
                         size: 18, // Change the font size of y-axis ticks
                     },
+                    color: "black",
                 },
                 display: true,
                 beginAtZero: true,
@@ -44,6 +45,7 @@ const MyBarChart = () => {
                     font: {
                       size: 16, // Change the font size of y-axis ticks
                     },
+                    color: "black",
                 },
             },
             x: {
@@ -53,8 +55,8 @@ const MyBarChart = () => {
                     text: "People Category",
                     font: {
                         size: 16,
-                        color: "black"
-                    }
+                    },
+                    color: "black",
                 },
                 display: true,
                 beginAtZero: true,
@@ -62,6 +64,7 @@ const MyBarChart = () => {
                     font: {
                       size: 16, // Change the font size of y-axis ticks
                     },
+                    color: "black",
                 },
             },
         },
@@ -82,6 +85,7 @@ const MyBarChart = () => {
                 font: {
                     size: 28, 
                 },
+                color: 'black'
             }
         },
         

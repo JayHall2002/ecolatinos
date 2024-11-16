@@ -49,7 +49,8 @@ const TotalDonationsChart = () => {
                 text: "Donations by Organization",
                 font: {
                     size: 28,
-                }
+                },
+                color: 'black'
             },
         },
     };
