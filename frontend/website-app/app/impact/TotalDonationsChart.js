@@ -53,10 +53,16 @@ const TotalDonationsChart = () => {
                 color: 'black'
             },
         },
+        layout: {
+          padding: {
+            bottom: -5,
+            top: -10,
+          }
+        },
     };
 
     return (
-        <div style={{display: 'flex', alignItems: 'center', width: '1200px', height: '800px', margin: "215px"}}>
+        <div style={{display: 'flex', alignItems: 'center', width: '1200px', height: '800px', margin: "360px"}}>
             <Pie data={data} options={options}/>
         </div>
       

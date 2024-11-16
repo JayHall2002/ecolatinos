@@ -14,6 +14,7 @@ ChartJS.register(
   
 const MyDoughnutChart = () => {
     /* This Doughnut Chart is meant to signify that EcoLatinos motivates 34 people to join the Landscaping program. */
+    /* The code below */
     const data = {
       labels: ["Participated", "Registered, not participated"],
       datasets: [{
@@ -45,11 +46,17 @@ const MyDoughnutChart = () => {
                 color: 'black'
             }
         },
+        layout: {
+          padding: {
+            bottom: -5,
+            top: -10,
+          }
+        },
     }
   
     return (
       <div className="App">
-        <div style={{display:"flex", width: "50%", height: "50%", margin: "215px"}}>
+        <div style={{display:"flex", width: "65%", height: "50%", margin: "360px", paddingBottom: "1rem"}}>
           <Doughnut data={data} options={options}>
           
           </Doughnut>

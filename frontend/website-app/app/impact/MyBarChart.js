@@ -68,6 +68,7 @@ const MyBarChart = () => {
                 },
             },
         },
+        maintainAspectRatio: false,
         plugins: {
             // This line of code sets the options for legend and title of graph.
             legend: {
@@ -88,11 +89,17 @@ const MyBarChart = () => {
                 color: 'black'
             }
         },
+        layout: {
+          padding: {
+            bottom: -5,
+            top: -10,
+          }
+        },
         
     };
     // Display the Bar chart to screen.
     return (
-        <div style={{display: 'flex', width: '1200px', height: '800px', margin: "215px"}}>
+        <div style={{display: 'flex', width: '1200px', height: '800px', margin: "360px"}}>
             <Bar data={data} options={options} />
         </div>
     );

@@ -5,7 +5,6 @@ import Video from "./Video.js";
 import MyBarChart from "./MyBarChart.js";
 import TotalDonationsChart from "./TotalDonationsChart.js";
 import MyDoughnutChart from "./MyDoughnutChart.js";
-import Statistic from "../images/statistic.png"
 import Image from "next/image";
 
 
@@ -27,18 +26,19 @@ export default function Impact() {
             {/* Render the first subheader on the page */}
             <SubHeader1 />
 
-            {/* Add a margin for spacing between sections */}
-            <div style={{ margin: '85px' }}></div>
-
             {/* Render Statistical information on the Organization's work. */}
             <SubHeader2 />
-            <Image src={Statistic} alt="stat_img" width={400} height={400} style={{alignItems: "center"}}/>
-            <ImpactStatement />
-
-            <ImpactStatement3 />
+            
             <MyBarChart />
+            <ImpactStatement3 />
+
+            {/* The next function renders a Pie chart that shows how much every grant contributed to 
+                the organization's funding. */}
             <TotalDonationsChart />
+            <ImpactStatement4 />
+
             <MyDoughnutChart />
+            <Quote />
         </>
     );
 };
@@ -119,20 +119,7 @@ function Other() {
     </p>
   )
 }
-
-
-
-function ImpactStatement() {
-  return (
-    <p>
-      <span style={{color: "rgb(0,139,139)", fontSize: "2rem", textalign:"right", margin: "20px"}}>
-        Latinos have never been contacted by an organization working to 
-        reduce global warming.
-      </span>
-    </p>
-  );
-}
-
+// This function returns 
 function ImpactStatement2() {
   return (
     <p>
@@ -141,16 +128,39 @@ function ImpactStatement2() {
         made efforts in improving water quality in all water bodies in the Mid Atlantic."
       </span>
     </p>
-  )
+  );
 }
 
 function ImpactStatement3() {
   return (
-    <p>
-      <span className='font-mono text-4xl text-blue-500 relative font-semibold' style={{margin: "10px", textAlign: "center"}}>
-          Latinos are more concerned about global warming than non-Latinos.
-      </span>
-    </p>
-  )
+    <div className="container4">
+      <p>
+        <span className='font-mono text-4xl text-blue-500 relative font-semibold' style={{margin: "10px", textAlign: "center", paddingBottom: "0.5rem"}}>
+            Latinos are more concerned about global warming than non-Latinos.
+        </span>
+      </p>
+    </div>
+  );
+}
+function ImpactStatement4() {
+  return (
+    <div className="container4">
+      <p>
+        <span className="font-mono text-4xl text-blue-500 relative font-semibold"> 
+          EcoLatinos has received more than $150K in grants and has received 1267 donations in the past year.
+        </span>
+      </p>
+    </div>
+  );
 }
 
+function Quote() {
+  return (
+    <div style={{borderLeft: '5px solid #ccc', 
+      paddingLeft: '20px', 
+      fontStyle: 'italic',
+      color: '#555', fontSize: "32px"}} className="font-mono text-4xl text-blue-500 relative font-semibold">
+        I learned that it is important to keep up with the health of our environment.
+    </div>
+  );
+}
