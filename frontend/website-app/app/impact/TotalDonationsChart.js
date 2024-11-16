@@ -13,9 +13,9 @@ const TotalDonationsChart = () => {
       labels: ["Gateways Grant", "National Fish & Wildlife Foundation", "Foundation Grant", "Trash and Pickup Services", "Partnerships"],
       datasets: [
         {
-            // Donation ammounts
+          // Donation ammounts
           data: ['150000', '250000', '250000', '10000', '50000'],
-        //   Legend for the different categories.
+          // Legend for the different categories.
           backgroundColor: [
             'rgb(255, 99, 132)',
             'rgb(54, 162, 235)',
@@ -56,7 +56,7 @@ const TotalDonationsChart = () => {
     };
 
     return (
-        <div style={{display: 'flex', alignItems: 'center', width: '1200px', height: '800px'}}>
+        <div style={{display: 'flex', alignItems: 'center', width: '1200px', height: '800px', margin: "215px"}}>
             <Pie data={data} options={options}/>
         </div>
       

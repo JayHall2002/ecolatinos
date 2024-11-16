@@ -4,6 +4,7 @@ import "./imgCarouselStyle.css"
 import Video from "./Video.js";
 import MyBarChart from "./MyBarChart.js";
 import TotalDonationsChart from "./TotalDonationsChart.js";
+import MyDoughnutChart from "./MyDoughnutChart.js";
 import Statistic from "../images/statistic.png"
 import Image from "next/image";
 
@@ -37,7 +38,7 @@ export default function Impact() {
             <ImpactStatement3 />
             <MyBarChart />
             <TotalDonationsChart />
-            
+            <MyDoughnutChart />
         </>
     );
 };

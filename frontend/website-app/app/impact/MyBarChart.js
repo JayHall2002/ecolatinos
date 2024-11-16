@@ -12,12 +12,12 @@ const MyBarChart = () => {
     // Data on the percentages of Latinos and non-Latinos who care about the environment.
     const datasets = [
         {
-            label: 'Non-Latinos',
+            label: 'Not So Important',
             data: [38, 17],
             backgroundColor: 'rgb(255, 99, 132)',
         },
         {
-            label: 'Latinos',
+            label: 'Extremely Important',
             data: [62, 83],
             backgroundColor: 'rgb(54, 162, 235)',
         },
@@ -92,7 +92,7 @@ const MyBarChart = () => {
     };
     // Display the Bar chart to screen.
     return (
-        <div style={{display: 'flex', alignItems: 'center', width: '1200px', height: '800px'}}>
+        <div style={{display: 'flex', width: '1200px', height: '800px', margin: "215px"}}>
             <Bar data={data} options={options} />
         </div>
     );
