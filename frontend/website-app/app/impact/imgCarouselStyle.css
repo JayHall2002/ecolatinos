@@ -39,11 +39,6 @@ body {
     margin: auto;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 74a0e821daf7f6492254ef1a6e2d89b52707620d
 .carousel-img {
     position: relative;
     max-width: 1000px;
@@ -120,9 +115,7 @@ body {
     border: none;
     padding: 15px;
     background-color: blueviolet;
-<<<<<<< HEAD
+
 }
->>>>>>> upstream/dev
-=======
-}
->>>>>>> 74a0e821daf7f6492254ef1a6e2d89b52707620d
+
+
