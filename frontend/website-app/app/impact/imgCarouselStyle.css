@@ -1,5 +1,5 @@
 
-/* This defines the entire body of the Impact page. */
+
 body {
     background-color: white;
     font: "mono";
@@ -15,6 +15,11 @@ body {
     font-size: 5rem;
     margin: 2rem auto;
 }
+/* Styles for the sub headings and paragraphs. */
+.sub-heading {
+    margin: 0;
+    font: "mono";
+}
 
 .other {
     margin: 0;
@@ -27,14 +32,18 @@ body {
     font-size: 1.2rem;
 }
 
-.container4 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.carousel {
+    position: relative;
+    width: 1000px;
+    height: fit-content;
+    margin: auto;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 74a0e821daf7f6492254ef1a6e2d89b52707620d
 .carousel-img {
     position: relative;
     max-width: 1000px;
@@ -111,5 +120,9 @@ body {
     border: none;
     padding: 15px;
     background-color: blueviolet;
+<<<<<<< HEAD
 }
 >>>>>>> upstream/dev
+=======
+}
+>>>>>>> 74a0e821daf7f6492254ef1a6e2d89b52707620d

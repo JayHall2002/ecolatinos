@@ -1,5 +1,7 @@
 "use client"
 import Navbar from "../components/navbar.js";
+import Carousel from "./Carousel.js"
+import data from "./data.js"
 import "./imgCarouselStyle.css"
 import Video from "./Video.js";
 import MyBarChart from "./MyBarChart.js";
@@ -12,6 +14,9 @@ export default function Impact() {
         <>
             {/* Render the navigation bar at the top of the page */}
             <Navbar />
+            
+            {/* Render the main header for the Impact page with specific styles */}
+            <Header />
 
             {/* Render the video on landscaping onto the page. */}
             <Video />
@@ -19,24 +24,27 @@ export default function Impact() {
             {/* Render the first paragraph of the introduction */}
             <Paragraph1 />
 
-            {/* Render the second introductory paragraph. */}
-            <Paragraph2 />
-
             {/* Render the first subheader on the page */}
             <SubHeader1 />
 
-            <MyBarChart />
-            <ImpactStatement3 />
+            {/* Render the image carousel; note: this carousel has an issue */}
+            <ImageCarousel />
 
-            {/* The next function renders a Pie chart that shows how much every grant contributed to 
-                the organization's funding. */}
-            <TotalDonationsChart />
-            <GridHeading />
-            {/* Create a Grid that shows the statistics related to the organization. */}
-            <StatusGrid />
-            <MyDoughnutChart />
-            
-            
+            {/* Add a margin for spacing between sections */}
+            <div style={{ margin: '85px' }}></div>
+            <Other />
+
+            <Paragraph2 />
+
+            {/* Render Statistical information on the Organization's work. */}
+            <SubHeader2 />
+            <Image src={Statistic} alt="stat_img" width={400} height={400} />
+            <ImpactStatement />
+
+
+            <MyBarChart />
+            {/* Render the footer at the bottom of the page */}
+            <Footer />
         </>
     );
 };
@@ -52,24 +60,7 @@ function Paragraph1() {
       {/* Text content for the first paragraph of the introduction */}
       EcoLatinos has completed projects in areas like Tree planting, cleaning up the Anacostia Northwest Branch, 
       providing outreach consulting services for Hispanic communities in the Mid-Atlantic region. In addition to 
-      that, they have also expanded their audience base using many of the programs they paticipated in. The organization 
-      has made more efforts in reducing global warning than any county or state department. It has also had more 
-      success in reaching out to Latino landscapers, which has been subsequently overlooked by other organizations.
-    </p>
-  );
-}
-
-
-/**
- * Function that renders the second introduction paragraph on the Impact page.
- * @returns {JSX.Element}
- */
-function Paragraph2() {
-  return (
-    <p style={{color:"black", margin: '10px'}} className="font-mono font-semibold  mt-5">
-      EcoLatinos has done culturally sensitive work with Spanish-speaking residents of the Chesapeake Bay region and 
-      has built a bridge that unites Hispanics and other environmentalists. The organization has encouraged members to enjoy 
-      nature while keeping waterways free of trash. 
+      that, they have also expanded their audience base using many of the programs they paticipated in. 
     </p>
   );
 }
@@ -85,11 +76,27 @@ function Paragraph2() {
  */
 function SubHeader1() {
   return (
-    <h1 className='font-mono text-4xl text-blue-500 relative font-semibold' style={{margin: "10px"}}>
+    <h1 style={{color: "black", backgroundColor:"lightblue", 
+      margin: "10px", padding: "10px"}} className='sub-heading'>
       {/* Text content for the first subheader */}
       EcoLatinos' Impact on Environment 
     </h1>
   )
+}
+
+function SubHeader2() {
+  return (
+    <h1 className='font-mono text-4xl text-blue-500 relative font-semibold'>
+      Statistics on Impact
+    </h1>
+  );
+}
+
+// This carousel is failing somehow.
+function ImageCarousel() {
+  return (
+   <Carousel data={data} /> 
+  );
 }
 
 /**
@@ -105,11 +112,34 @@ function Other() {
     <p style={{color:"black", margin: '10px'}} className="font-mono font-semibold  mt-5">
       The organization has made more efforts in reducing global warning than any county 
       or state department. It has also had more success in reaching out to Latino landscapers, which 
-      has been subsequently overlooked by other organizations. 
+      has been subsequently overlooked by other organizations. The organization has taken part in the 
+      Youth Environmental Summer Camp program which has helped students from schools in the Price George's county
+      area gain knowledge in areas like fishing, ecosystem preservation and many other areas. 
     </p>
   )
 }
-// This function returns 
+
+function Paragraph2() {
+  return (
+    <p style={{color:"black", margin: '10px'}} className="font-mono font-semibold  mt-5">
+      EcoLatinos has done culturally sensitive work with Spanish-speaking residents of the Chesapeake Bay region and 
+      has built a bridge that unites Hispanics and other environmentalists. The organization has encouraged members to enjoy 
+      nature while keeping waterways free of trash. 
+    </p>
+  );
+}
+
+function ImpactStatement() {
+  return (
+    <p>
+      <span style={{color: "rgb(0,139,139)", fontSize: "2rem", textalign:"right", margin: "20px"}}>
+        Latinos have never been contacted by an organization working to 
+        reduce global warming.
+      </span>
+    </p>
+  );
+}
+
 function ImpactStatement2() {
   return (
     <p>
@@ -118,28 +148,32 @@ function ImpactStatement2() {
         made efforts in improving water quality in all water bodies in the Mid Atlantic."
       </span>
     </p>
+  )
+}
+
+function Header() {
+  // Make the header have some styles.
+  const myStyle = { color: "white", backgroundColor: "Green",
+    padding: "10px", textalign: "center", margin:"10px", className:'main-header'
+  };
+
+  return (
+    <header>
+      <h1 style={myStyle}>Our Impact</h1>
+    </header>
   );
 }
 
-function ImpactStatement3() {
+function Footer() {
+  // Make the footer have certain styles. 
+  const footerStyle = {
+    color: "white", backgroundColor: "Green",
+    padding: "10px"
+  };
+
   return (
-    <div className="container4">
-      <p>
-        <span className='font-mono text-4xl text-blue-500 relative font-semibold' style={{margin: "10px", textAlign: "center", paddingBottom: "0.5rem"}}>
-            Latinos are more concerned about global warming than non-Latinos.
-        </span>
-      </p>
-    </div>
-  );
-}
-function GridHeading() {
-  return (
-    <div className="container4" style={{margin: '22.5px'}}>
-      <p>
-        <span className="font-mono text-4xl text-black-500 relative font-semibold"> 
-          EcoLatinos by the numbers
-        </span>
-      </p>
-    </div>
+    <footer>
+      <p style={footerStyle}>Join us in making a difference!</p>
+    </footer>
   );
 }

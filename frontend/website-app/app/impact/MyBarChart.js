@@ -9,6 +9,7 @@ ChartJS.register(CategoryScale, LinearScale, PointElement, BarElement, Title, To
 const MyBarChart = () => {
     // The issues that Latinos care about the most.
 <<<<<<< HEAD
+<<<<<<< HEAD
     const labels = ['Non-Latinos', 'Latinos'];
     // Data on the percentages of Latinos and non-Latinos who care about the environment.
     const datasets = [
@@ -21,6 +22,8 @@ const MyBarChart = () => {
             label: 'Extremely Important',
             data: [62, 83],
 =======
+=======
+>>>>>>> 74a0e821daf7f6492254ef1a6e2d89b52707620d
     const labels = ['Too much garbage', 'Water Pollution', 'Air Pollution', 'Drinking Water safety', 'Lack of greenspace and parks'];
     // Data on the percentages of Latinos and non-Latinos who care about the environment.
     const datasets = [
@@ -32,7 +35,10 @@ const MyBarChart = () => {
         {
             label: 'Non-Hispanic Adults',
             data: [60, 57, 49, 38, 36],
+<<<<<<< HEAD
 >>>>>>> upstream/dev
+=======
+>>>>>>> 74a0e821daf7f6492254ef1a6e2d89b52707620d
             backgroundColor: 'rgb(54, 162, 235)',
         },
     ];
@@ -47,6 +53,7 @@ const MyBarChart = () => {
                 title: {
                     display: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
                     text: "Percentage of people concerned",
                     font: {
                         size: 18, // Change the font size of y-axis ticks
@@ -57,6 +64,8 @@ const MyBarChart = () => {
                 beginAtZero: true,
                 max: 100,
 =======
+=======
+>>>>>>> 74a0e821daf7f6492254ef1a6e2d89b52707620d
                     text: "Environmental Issues",
                     font: {
                         size: 18, // Change the font size of y-axis ticks
@@ -65,21 +74,28 @@ const MyBarChart = () => {
                 display: true,
                 beginAtZero: true,
                 max: 80,
+<<<<<<< HEAD
 >>>>>>> upstream/dev
+=======
+>>>>>>> 74a0e821daf7f6492254ef1a6e2d89b52707620d
                 ticks: {
                     font: {
                       size: 16, // Change the font size of y-axis ticks
                     },
 <<<<<<< HEAD
+<<<<<<< HEAD
                     color: "black",
 =======
 >>>>>>> upstream/dev
+=======
+>>>>>>> 74a0e821daf7f6492254ef1a6e2d89b52707620d
                 },
             },
             x: {
                 // Add the title and modify the font size for the tick marks and the title label.
                 title: {
                     display: true,
+<<<<<<< HEAD
 <<<<<<< HEAD
                     text: "People Category",
                     font: {
@@ -90,6 +106,8 @@ const MyBarChart = () => {
                 display: true,
                 beginAtZero: true,
 =======
+=======
+>>>>>>> 74a0e821daf7f6492254ef1a6e2d89b52707620d
                     text: "% of people who consider this a problem",
                     font: {
                         size: 16,
@@ -98,11 +116,15 @@ const MyBarChart = () => {
                 display: true,
                 beginAtZero: true,
                 max: 80,
+<<<<<<< HEAD
 >>>>>>> upstream/dev
+=======
+>>>>>>> 74a0e821daf7f6492254ef1a6e2d89b52707620d
                 ticks: {
                     font: {
                       size: 16, // Change the font size of y-axis ticks
                     },
+<<<<<<< HEAD
 <<<<<<< HEAD
                     color: "black",
                 },
@@ -112,11 +134,16 @@ const MyBarChart = () => {
         plugins: {
             // This line of code sets the options for legend and title of graph.
 =======
+=======
+>>>>>>> 74a0e821daf7f6492254ef1a6e2d89b52707620d
                 },
             },
         },
         plugins: {
+<<<<<<< HEAD
 >>>>>>> upstream/dev
+=======
+>>>>>>> 74a0e821daf7f6492254ef1a6e2d89b52707620d
             legend: {
                 position: 'right',
                 align: 'center',
@@ -128,6 +155,7 @@ const MyBarChart = () => {
             },
             title: {
                 display: true,
+<<<<<<< HEAD
 <<<<<<< HEAD
                 text: "Global Warming is more important to Latinos than any other minority.",
                 font: {
@@ -148,6 +176,8 @@ const MyBarChart = () => {
     return (
         <div style={{display: 'flex', width: '1200px', height: '800px', margin: "360px", marginBottom: "6.5px"}}>
 =======
+=======
+>>>>>>> 74a0e821daf7f6492254ef1a6e2d89b52707620d
                 text: "Hispanics see more environmental problems in their communities than non-Hispanics",
                 font: {
                     size: 18, 
@@ -158,7 +188,10 @@ const MyBarChart = () => {
     };
     return (
         <div style={{display: 'flex', alignItems: 'center'}}>
+<<<<<<< HEAD
 >>>>>>> upstream/dev
+=======
+>>>>>>> 74a0e821daf7f6492254ef1a6e2d89b52707620d
             <Bar data={data} options={options} />
         </div>
     );
