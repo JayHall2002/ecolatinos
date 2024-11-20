@@ -99,7 +99,7 @@ export default function Home() {
                         <div className="flex justify-start space-x-16 image-container" style={{ marginTop: "20px" , marginBottom: "100px"}}>
                             <div className="flex flex-col items-center group relative">
                                 <Image src={scapingprogram} alt="Land Scaping Program" height={200} width={200} className="text-blue-500 font-mono rounded-full shadow-lg border-2 hover:scale-125 hover:blur-sm duration-500" />
-                                <p className="mt-2 text-center font-mono text-gray-600">Land Scaping Program</p>
+                                <p className={`mt-2 text-center text-gray-600 ${lato.className}`}>Land Scaping Program</p>
                                 
                                 <button 
                                     className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-500 mt-2 px-4 py-2 bg-transparent border-2 border-white text-white rounded-full shadow-lg hover:bg-green-700 ${poppins.className}`}
@@ -128,7 +128,7 @@ export default function Home() {
                             )}
                             <div className="flex flex-col items-center group relative">
                                 <Image src={youthprogram} alt="Youth Program" height={200} width={200} className="text-blue-500 font-mono rounded-full shadow-lg border-2 hover:scale-125 hover:blur-sm duration-500" />
-                                <p className="mt-2 text-center font-mono text-gray-600">Youth Program</p>
+                                <p className={`mt-2 text-center text-gray-600 ${lato.className}`}>Youth Program</p>
                                 
                                 <button 
                                     className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-500 mt-2 px-4 py-2 bg-transparent border-2 border-white text-white rounded-full shadow-lg hover:bg-green-700 ${poppins.className}`}
@@ -158,7 +158,7 @@ export default function Home() {
                             )}
                             <div className="flex flex-col items-center group relative">
                                 <Image src={placeprogram} alt="Outreach Program" height={200} width={200} className="text-blue-500 font-mono rounded-full shadow-lg border-2 hover:scale-125 hover:blur-sm duration-500" />
-                                <p className="mt-2 text-center font-mono text-gray-600">Outreach Program</p>
+                                <p className={`mt-2 text-center text-gray-600 ${lato.className}`}>Outreach Program</p>
                                 
                                 <button 
                                     className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-500 mt-2 px-4 py-2 bg-transparent border-2 border-white text-white rounded-full shadow-lg hover:bg-green-700 ${poppins.className}`}
@@ -185,7 +185,7 @@ export default function Home() {
                             )}
                             <div className="flex flex-col items-center group relative">
                                 <Image src={partnershipprogram} alt="Partnership Program" height={200} width={200} className="text-blue-500 font-mono rounded-full shadow-lg border-2 hover:scale-125 hover:blur-sm duration-500" />
-                                <p className="mt-2 text-center font-mono text-gray-600">Partnership Program</p>
+                                <p className={`mt-2 text-center text-gray-600 ${lato.className}`}>Partnership Program</p>
                                 
                                 <button 
                                 
@@ -216,7 +216,7 @@ export default function Home() {
                             )}
                             <div className="flex flex-col items-center group relative">
                                 <Image src={getinvolved} alt="Join Us" height={200} width={200} className="text-blue-500 font-mono rounded-full shadow-lg border-2 hover:scale-125 hover:blur-sm duration-500" />
-                                <p className="mt-2 text-center font-mono text-gray-600">Join Us</p>
+                                <p className={`mt-2 text-center text-gray-600 ${lato.className}`}>Join Us</p>
                                 
                                 <button onClick={() => setIsShowingGetInvolved(true)} 
                                 className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-500 mt-2 px-4 py-2 bg-transparent border-2 border-white text-white rounded-full shadow-lg hover:bg-green-700 ${poppins.className}`} >
@@ -244,7 +244,7 @@ export default function Home() {
                 )}
                 {/* Subscription Text Entry Box */}
                 <div className="flex flex-col items-center" style={{ marginTop: "40px",marginBottom: "100px", animation: "fadeIn 9s ease-in forwards", animationDelay: "9s" }}>
-                    <h2 className="text-2xl font-bold mb-4">Subscribe to our Newsletter</h2>
+                    <h2 className={`mt-2 text-center eco-graytext ${poppins.className}`}>Subscribe to our Newsletter</h2>
                     <input type="email" placeholder="Enter your email" className="border border-gray-300 rounded-md px-4 py-2 mb-4" />
                     <button onClick={() => setIsSubscribed(true)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">Subscribe</button>
                 </div>
