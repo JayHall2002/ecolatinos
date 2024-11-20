@@ -8,17 +8,17 @@ ChartJS.register(CategoryScale, LinearScale, PointElement, BarElement, Title, To
 // about the environment than any other population.
 const MyBarChart = () => {
     // The issues that Latinos care about the most.
-    const labels = ['Non-Latinos', 'Latinos'];
+    const labels = ['Too much garbage', 'Water Pollution', 'Air Pollution', 'Drinking Water safety', 'Lack of greenspace and parks'];
     // Data on the percentages of Latinos and non-Latinos who care about the environment.
     const datasets = [
         {
-            label: 'Not So Important',
-            data: [38, 17],
+            label: 'Hispanic Adults',
+            data: [72, 71, 70, 56, 53],
             backgroundColor: 'rgb(255, 99, 132)',
         },
         {
-            label: 'Extremely Important',
-            data: [62, 83],
+            label: 'Non-Hispanic Adults',
+            data: [60, 57, 49, 38, 36],
             backgroundColor: 'rgb(54, 162, 235)',
         },
     ];
@@ -32,45 +32,40 @@ const MyBarChart = () => {
             y: {
                 title: {
                     display: true,
-                    text: "Percentage of people concerned",
+                    text: "Environmental Issues",
                     font: {
                         size: 18, // Change the font size of y-axis ticks
                     },
-                    color: "black",
                 },
                 display: true,
                 beginAtZero: true,
-                max: 100,
+                max: 80,
                 ticks: {
                     font: {
                       size: 16, // Change the font size of y-axis ticks
                     },
-                    color: "black",
                 },
             },
             x: {
                 // Add the title and modify the font size for the tick marks and the title label.
                 title: {
                     display: true,
-                    text: "People Category",
+                    text: "% of people who consider this a problem",
                     font: {
                         size: 16,
-                    },
-                    color: "black",
+                    }
                 },
                 display: true,
                 beginAtZero: true,
+                max: 80,
                 ticks: {
                     font: {
                       size: 16, // Change the font size of y-axis ticks
                     },
-                    color: "black",
                 },
             },
         },
-        maintainAspectRatio: false,
         plugins: {
-            // This line of code sets the options for legend and title of graph.
             legend: {
                 position: 'right',
                 align: 'center',
@@ -82,24 +77,16 @@ const MyBarChart = () => {
             },
             title: {
                 display: true,
-                text: "Global Warming is more important to Latinos than any other minority.",
+                text: "Hispanics see more environmental problems in their communities than non-Hispanics",
                 font: {
-                    size: 28, 
+                    size: 18, 
                 },
-                color: 'black'
             }
         },
-        layout: {
-          padding: {
-            bottom: -5,
-            top: -10,
-          }
-        },
-        
+        indexAxis: 'y'
     };
-    // Display the Bar chart to screen.
     return (
-        <div style={{display: 'flex', width: '1200px', height: '800px', margin: "360px", marginBottom: "6.5px"}}>
+        <div style={{display: 'flex', alignItems: 'center'}}>
             <Bar data={data} options={options} />
         </div>
     );
