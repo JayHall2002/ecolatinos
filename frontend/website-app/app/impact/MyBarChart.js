@@ -99,7 +99,7 @@ const MyBarChart = () => {
     };
     // Display the Bar chart to screen.
     return (
-        <div style={{display: 'flex', width: '1200px', height: '800px', margin: "360px"}}>
+        <div style={{display: 'flex', width: '1200px', height: '800px', margin: "360px", marginBottom: "6.5px"}}>
             <Bar data={data} options={options} />
         </div>
     );

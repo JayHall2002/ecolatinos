@@ -6,8 +6,7 @@ import MyBarChart from "./MyBarChart.js";
 import TotalDonationsChart from "./TotalDonationsChart.js";
 import MyDoughnutChart from "./MyDoughnutChart.js";
 import Image from "next/image";
-
-
+import StatusGrid from "./StatusGrid.js";
 export default function Impact() {
     return (
         <>
@@ -26,19 +25,18 @@ export default function Impact() {
             {/* Render the first subheader on the page */}
             <SubHeader1 />
 
-            {/* Render Statistical information on the Organization's work. */}
-            <SubHeader2 />
-            
             <MyBarChart />
             <ImpactStatement3 />
 
             {/* The next function renders a Pie chart that shows how much every grant contributed to 
                 the organization's funding. */}
             <TotalDonationsChart />
-            <ImpactStatement4 />
-
+            <GridHeading />
+            {/* Create a Grid that shows the statistics related to the organization. */}
+            <StatusGrid />
             <MyDoughnutChart />
-            <Quote />
+            
+            
         </>
     );
 };
@@ -94,14 +92,6 @@ function SubHeader1() {
   )
 }
 
-function SubHeader2() {
-  return (
-    <h1 className='font-mono text-4xl text-blue-500 relative font-semibold' style={{margin: "10px", textAlign: "center"}}>
-      Statistics on Impact
-    </h1>
-  );
-}
-
 /**
  * Function to render the second paragraph of the introduction on the Impact page.
  * 
@@ -142,25 +132,14 @@ function ImpactStatement3() {
     </div>
   );
 }
-function ImpactStatement4() {
+function GridHeading() {
   return (
-    <div className="container4">
+    <div className="container4" style={{margin: '22.5px'}}>
       <p>
-        <span className="font-mono text-4xl text-blue-500 relative font-semibold"> 
-          EcoLatinos has received more than $150K in grants and has received 1267 donations in the past year.
+        <span className="font-mono text-4xl text-black-500 relative font-semibold"> 
+          EcoLatinos by the numbers
         </span>
       </p>
-    </div>
-  );
-}
-
-function Quote() {
-  return (
-    <div style={{borderLeft: '5px solid #ccc', 
-      paddingLeft: '20px', 
-      fontStyle: 'italic',
-      color: '#555', fontSize: "32px"}} className="font-mono text-4xl text-blue-500 relative font-semibold">
-        I learned that it is important to keep up with the health of our environment.
     </div>
   );
 }
