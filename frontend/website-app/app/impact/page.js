@@ -1,50 +1,39 @@
 "use client"
 import Navbar from "../components/navbar.js";
-import Carousel from "./Carousel.js"
-import data from "./data.js"
+
 import "./imgCarouselStyle.css"
 import Video from "./Video.js";
 import MyBarChart from "./MyBarChart.js";
-
-import Statistic from "../images/statistic.png"
+import TotalDonationsChart from "./TotalDonationsChart.js";
+import MyDoughnutChart from "./MyDoughnutChart.js";
 import Image from "next/image";
-
+import StatusGrid from "./StatusGrid.js";
 export default function Impact() {
     return (
         <>
             {/* Render the navigation bar at the top of the page */}
             <Navbar />
             
-            {/* Render the main header for the Impact page with specific styles */}
-            <Header />
-
             {/* Render the video on landscaping onto the page. */}
             <Video />
 
             {/* Render the first paragraph of the introduction */}
             <Paragraph1 />
 
-            {/* Render the first subheader on the page */}
-            <SubHeader1 />
-
-            {/* Render the image carousel; note: this carousel has an issue */}
-            <ImageCarousel />
-
-            {/* Add a margin for spacing between sections */}
-            <div style={{ margin: '85px' }}></div>
             <Other />
 
             <Paragraph2 />
 
             {/* Render Statistical information on the Organization's work. */}
             <SubHeader2 />
-            <Image src={Statistic} alt="stat_img" width={400} height={400} />
-            <ImpactStatement />
-
 
             <MyBarChart />
             {/* Render the footer at the bottom of the page */}
-            <Footer />
+
+            <TotalDonationsChart />
+            <GridHeading />
+            <StatusGrid />
+            <MyDoughnutChart />
         </>
     );
 };
@@ -65,24 +54,6 @@ function Paragraph1() {
   );
 }
 
-/**
- * Function to render the first subheader on the Impact page.
- * 
- * This function renders an h1 element with a lightblue background color and black text color. 
- * The subheader is styled with a margin of 10px and a padding of 10px. 
- * The text content of the subheader is "EcoLatinos' Impact on Environment".
- * 
- * @return {JSX.Element} The subheader element.
- */
-function SubHeader1() {
-  return (
-    <h1 style={{color: "black", backgroundColor:"lightblue", 
-      margin: "10px", padding: "10px"}} className='sub-heading'>
-      {/* Text content for the first subheader */}
-      EcoLatinos' Impact on Environment 
-    </h1>
-  )
-}
 
 function SubHeader2() {
   return (
@@ -92,12 +63,6 @@ function SubHeader2() {
   );
 }
 
-// This carousel is failing somehow.
-function ImageCarousel() {
-  return (
-   <Carousel data={data} /> 
-  );
-}
 
 /**
  * Function to render the second paragraph of the introduction on the Impact page.
@@ -129,16 +94,7 @@ function Paragraph2() {
   );
 }
 
-function ImpactStatement() {
-  return (
-    <p>
-      <span style={{color: "rgb(0,139,139)", fontSize: "2rem", textalign:"right", margin: "20px"}}>
-        Latinos have never been contacted by an organization working to 
-        reduce global warming.
-      </span>
-    </p>
-  );
-}
+
 
 function ImpactStatement2() {
   return (
@@ -151,29 +107,14 @@ function ImpactStatement2() {
   )
 }
 
-function Header() {
-  // Make the header have some styles.
-  const myStyle = { color: "white", backgroundColor: "Green",
-    padding: "10px", textalign: "center", margin:"10px", className:'main-header'
-  };
-
+function GridHeading() {
   return (
-    <header>
-      <h1 style={myStyle}>Our Impact</h1>
-    </header>
-  );
-}
-
-function Footer() {
-  // Make the footer have certain styles. 
-  const footerStyle = {
-    color: "white", backgroundColor: "Green",
-    padding: "10px"
-  };
-
-  return (
-    <footer>
-      <p style={footerStyle}>Join us in making a difference!</p>
-    </footer>
+    <div className="container4" style={{margin: '22.5px'}}>
+      <p>
+        <span className="font-mono text-4xl text-black-500 relative font-semibold"> 
+          EcoLatinos by the numbers
+        </span>
+      </p>
+    </div>
   );
 }
