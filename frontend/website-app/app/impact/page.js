@@ -1,7 +1,6 @@
 "use client"
 import Navbar from "../components/navbar.js";
-import Carousel from "./Carousel.js"
-import data from "./data.js"
+
 import "./imgCarouselStyle.css"
 import Video from "./Video.js";
 import MyBarChart from "./MyBarChart.js";
@@ -27,9 +26,6 @@ export default function Impact() {
             {/* Render the first subheader on the page */}
             <SubHeader1 />
 
-            {/* Render the image carousel; note: this carousel has an issue */}
-            <ImageCarousel />
-
             {/* Add a margin for spacing between sections */}
             <div style={{ margin: '85px' }}></div>
             <Other />
@@ -44,6 +40,10 @@ export default function Impact() {
 
             <MyBarChart />
             {/* Render the footer at the bottom of the page */}
+
+            <TotalDonationsChart />
+
+            <StatusGrid />
             <Footer />
         </>
     );
@@ -92,12 +92,6 @@ function SubHeader2() {
   );
 }
 
-// This carousel is failing somehow.
-function ImageCarousel() {
-  return (
-   <Carousel data={data} /> 
-  );
-}
 
 /**
  * Function to render the second paragraph of the introduction on the Impact page.
