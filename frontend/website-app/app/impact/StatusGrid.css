@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+  
+  /* Make a grid display in elements where we have the same class name. */
+.stats-grid-block {
+    /* This makes it possible that we have no gaps between the columns or rows. */
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.3em;
+    
+}
+  
+  /* Specify the way each of the blocks shows in the grid. */
+#w-node-af905812-8dc1-ba38-13a3-afa5139412fa-6517643d, 
+#w-node-af905812-8dc1-ba38-13a3-afa513941328-6517643d, 
+#w-node-_6d714e7a-c8bc-f423-083e-8c24b51ce591-2a77ae5b, 
+#w-node-_6d714e7a-c8bc-f423-083e-8c24b51ce599-2a77ae5b, 
+#w-node-_6d714e7a-c8bc-f423-083e-8c24b51ce5a1-2a77ae5b, 
+#w-node-_6d714e7a-c8bc-f423-083e-8c24b51ce5a9-2a77ae5b, 
+#w-node-_6d714e7a-c8bc-f423-083e-8c24b51ce5b1-2a77ae5b, 
+#w-node-_6d714e7a-c8bc-f423-083e-8c24b51ce5b9-2a77ae5b {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+   
+}
+  
+.stats-block {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem 2rem;
+    display:flex;
+    padding-bottom: -32px;
+    padding-left: 12px;
+}
+  
+.stats-block-divider {
+    background-color: #000;
+    width: 55px;
+    height: 15px;
+    margin-bottom: 16px;
+}
+  
+/* The three styles below layout the dividers that will show on screen. */
+.bg-rnd-dark-red {
+    background-image: linear-gradient(to bottom, #10c891, #3C5494);
+    color: white;
+}
+  
+.bg-rnd-green {
+    background-image: linear-gradient(to bottom, #90EE90, #90EE90);
+    color: black;
+}
+  
+.bg-rnd-aqua {
+    background-image: linear-gradient(to bottom, aqua, aqua);
+}
+  
+.bg-rnd-blue {
+    background-image: linear-gradient(to bottom, #3C5494, #3C5494);
+    color: white;
+}
+  
+.white-text {
+    color: white
+}
