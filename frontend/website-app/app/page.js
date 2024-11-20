@@ -1,5 +1,6 @@
 "use client";
 import "./styles.css";
+import "./globals.css";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import ourmission from "../app/images/landscaping.jpeg";
@@ -13,8 +14,20 @@ import youthprogram from "../app/images/youthprogram.jpeg";
 import placeprogram from "../app/images/outreachprogram.jpeg";
 import partnershipprogram from "../app/images/partnershipprogram.jpeg";
 import getinvolved from "../app/images/joinus.jpeg";
+import { Poppins } from "next/font/google";
+import { Lato } from "next/font/google";
 
+// Import Poppins Black font
+const poppins = Poppins({
+    weight: "900", // Black font weight
+    subsets: ["latin"], // Ensure proper subset
+})
 
+// Import Lato font
+const lato = Lato({
+    weight: "400", // Regular weight (change to "700" or "900" for bold)
+    subsets: ["latin"], // Use appropriate subsets
+  });
 export default function Home() {
     const [isMounted, setIsMounted] = useState(false);
     const [typedText, setTypedText] = useState("");
@@ -61,27 +74,27 @@ export default function Home() {
                 
                 {isMounted && (
                     <div className="fade-in flex justify-start space-x-16 italic" style={{ marginTop: "20px", opacity: 0, animation: "fadeIn 1s ease-in forwards", animationDelay: "0s" }}>
-                        <h1 className="text-4xl font-mono font-semibold text-gray-600">Our Mission</h1>  
+                        <h1 className={`text-4xl eco-greentext ${poppins.className}`}>Our Mission</h1>
                     </div>
                         
                 )}
                 {isMounted && (
-                    <div className="fade-in flex flex-row justify-start space-x-16" style={{ marginTop: "20px", opacity: 0, animation: "fadeIn 2s ease-in forwards", animationDelay: "3s" }}>
+                    <div className="blue-row rounded-lg -translate-x-4 fade-in flex flex-row justify-start space-x-16" style={{ marginTop: "20px", opacity: 0, animation: "fadeIn 2s ease-in forwards", animationDelay: "3s" }}>
                         <div className="flex flex-col">
-                            <h2 className="text-2xl font-mono font-semibold tracking-widest leading-loose text-green-600 text-left">Amplify the voice of the Latino Communities in their pursuit of social and environmental justice through outreach, education and advocacy across the Chesapeake Bay region.</h2>
+                            <h2 className={`text-2xl tracking-widest leading-loose text-white text-left ${lato.className}`}>Amplify the voice of the Latino Communities in their pursuit of social and environmental justice through outreach, education and advocacy across the Chesapeake Bay region.</h2>
                             <Link href="/aboutus" passHref>  
                                 <div className="flex justify-center" style={{ marginTop: "20px" }}>
                                     <Learnmorebutton />
                                 </div>
                             </Link>
                         </div>
-                        <Image src={ourmission} alt="our mission" height={300} width={600} className="text-blue-500 font-mono rounded-full shadow-lg border-2" style={{ marginBottom: "20px" }} />
+                        <Image src={ourmission} alt="our mission" height={300} width={600} className="text-blue-500 font-mono rounded-lg shadow-lg border-2" style={{ marginBottom: "20px" }} />
                     </div>
                 )}
                 {isMounted && (
-                    <div className="fade-in" style={{ marginTop: "40px", opacity: 0, animation: "fadeIn 3s ease-in forwards", animationDelay: "3s" }}>
+                    <div className="fade-in space-x-16" style={{ marginTop: "40px", opacity: 0, animation: "fadeIn 3s ease-in forwards", animationDelay: "3s" }}>
                         <div className="fade-in flex flex-row justify-start space-x-16 italic">
-                            <h1 className="text-4xl font-mono font-semibold text-gray-600">Our Programs</h1> 
+                            <h1 className={`text-4xl  eco-greentext ${poppins.className}`}>Our Programs</h1> 
                         </div>
                         <div className="flex justify-start space-x-16 image-container" style={{ marginTop: "20px" , marginBottom: "100px"}}>
                             <div className="flex flex-col items-center group relative">
@@ -89,7 +102,7 @@ export default function Home() {
                                 <p className="mt-2 text-center font-mono text-gray-600">Land Scaping Program</p>
                                 
                                 <button 
-                                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-500 mt-2 px-4 py-2 bg-transparent border-2 border-white text-white font-bold rounded-full shadow-lg hover:bg-green-700"
+                                    className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-500 mt-2 px-4 py-2 bg-transparent border-2 border-white text-white rounded-full shadow-lg hover:bg-green-700 ${poppins.className}`}
                                     onClick={() => setIsShowingLandScapeImage(true)}>
                                     Learn More
                                 </button>
@@ -98,8 +111,8 @@ export default function Home() {
                             {isShowingLandScapeImage && (
                                 <div className="fixed w-screen h-screen bottom-20 top-0 right-0 bg-gray-400 bg-opacity-50 flex items-center justify-center z-50">
                                     <div className="bg-white rounded-lg shadow-lg p-4 w-1/2">
-                                        <h2 className="text-2xl font-mono font-bold mb-4">Landscaping Program</h2>
-                                        <p className="text-gray-600 font-mono tracking-wider">
+                                        <h2 className={`text-2xl font-mono font-bold mb-4 ${poppins.className}`}>Landscaping Program</h2>
+                                        <p className={`text-gray-600 font-mono tracking-wider ${lato.className}`}>
                                             Funded by the National Fish and Wildlife Foundation (NFWF)
                                             <br/><br/> Equitable landscaping was born out of a need to bridge a crucial gap in Chesapeake Bay's environmental training. Traditional programs overlook Spanish-speaking Latino landscapers, leaving them at a disadvantage. Our "Equitable Landscaping" initiative offers culturally relevant, Spanish-language training in green infrastructure, empowering Latinos as environmental stewards. Partnering with the Chesapeake Conservation Landscaping Council, we ensure inclusive education, enhancing skills and opportunities in the green job market while fostering environmental conservation and public health. Join to build a more diverse, skilled, and environmentally conscious community. 
                                             <br/><br/>Participants receive a certification at the end of training to increase competitiveness in the job market, as well as obtain access to quality environmental training.
@@ -118,8 +131,8 @@ export default function Home() {
                                 <p className="mt-2 text-center font-mono text-gray-600">Youth Program</p>
                                 
                                 <button 
-                                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-500 mt-2 px-4 py-2 bg-transparent border-2 border-white text-white font-bold rounded-full shadow-lg hover:bg-green-700"
-                                onClick={() => setIsShowingYouthProgram(true)}>
+                                    className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-500 mt-2 px-4 py-2 bg-transparent border-2 border-white text-white rounded-full shadow-lg hover:bg-green-700 ${poppins.className}`}
+                                    onClick={() => setIsShowingYouthProgram(true)}>
                                     Learn More
                                 </button>
                                 
@@ -148,8 +161,8 @@ export default function Home() {
                                 <p className="mt-2 text-center font-mono text-gray-600">Outreach Program</p>
                                 
                                 <button 
-                                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-500 mt-2 px-4 py-2 bg-transparent border-2 border-white text-white font-bold rounded-full shadow-lg hover:bg-green-700"
-                                onClick={() => setIsShowingOutreachProgram(true)}>
+                                    className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-500 mt-2 px-4 py-2 bg-transparent border-2 border-white text-white rounded-full shadow-lg hover:bg-green-700 ${poppins.className}`}
+                                    onClick={() => setIsShowingOutreachProgram(true)}>
                                     Learn More
                                 </button>
                                 
@@ -175,8 +188,9 @@ export default function Home() {
                                 <p className="mt-2 text-center font-mono text-gray-600">Partnership Program</p>
                                 
                                 <button 
-                                onClick={() => setIsShowingPartnershipProgram(true)} className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-500 mt-2 px-4 py-2 bg-transparent border-2 border-white text-white font-bold rounded-full shadow-lg hover:bg-green-700">
-                                        Learn More
+                                
+                                onClick={() => setIsShowingPartnershipProgram(true)}   className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-500 mt-2 px-4 py-2 bg-transparent border-2 border-white text-white rounded-full shadow-lg hover:bg-green-700 ${poppins.className}`}>
+                                    Learn More
                                 </button>
                                 
                             </div>
@@ -204,7 +218,8 @@ export default function Home() {
                                 <Image src={getinvolved} alt="Join Us" height={200} width={200} className="text-blue-500 font-mono rounded-full shadow-lg border-2 hover:scale-125 hover:blur-sm duration-500" />
                                 <p className="mt-2 text-center font-mono text-gray-600">Join Us</p>
                                 
-                                <button onClick={() => setIsShowingGetInvolved(true)} className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-500 mt-2 px-4 py-2 bg-transparent border-2 border-white text-white font-bold rounded-full shadow-lg hover:bg-green-700">
+                                <button onClick={() => setIsShowingGetInvolved(true)} 
+                                className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition duration-500 mt-2 px-4 py-2 bg-transparent border-2 border-white text-white rounded-full shadow-lg hover:bg-green-700 ${poppins.className}`} >
                                     Learn More
                                 </button>
                                 
