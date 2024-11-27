@@ -1,6 +1,5 @@
 "use client"
 import Navbar from "../components/navbar.js";
-
 import "./imgCarouselStyle.css"
 import Video from "./Video.js";
 import MyBarChart from "./MyBarChart.js";
@@ -8,6 +7,19 @@ import TotalDonationsChart from "./TotalDonationsChart.js";
 import MyDoughnutChart from "./MyDoughnutChart.js";
 import Image from "next/image";
 import StatusGrid from "./StatusGrid.js";
+import { Lato } from "next/font/google";
+import { Poppins } from "next/font/google";
+// Body font style.
+const lato = Lato({
+  weight: "400",
+  subsets: ["latin"],
+});
+// Header font size.
+const poppins = Poppins({
+  weight: "900",
+  subsets: ['latin'],
+});
+
 export default function Impact() {
     return (
         <>
@@ -45,7 +57,7 @@ export default function Impact() {
  */
 function Paragraph1() {
   return (
-    <p style={{color:"black", margin: '10px'}} className='font-mono font-semibold  mt-5'>
+    <p style={{color:"black", margin: '10px'}} className={`text-1.7xl tracking-widest leading-loose text-black ${lato.className}`}>
       {/* Text content for the first paragraph of the introduction */}
       EcoLatinos has completed projects in areas like Tree planting, cleaning up the Anacostia Northwest Branch, 
       providing outreach consulting services for Hispanic communities in the Mid-Atlantic region. In addition to 
@@ -57,7 +69,7 @@ function Paragraph1() {
 
 function SubHeader2() {
   return (
-    <h1 className='font-mono text-4xl text-blue-500 relative font-semibold'>
+    <h1 className={`text-4xl eco-greentext ${poppins.className}`}>
       Statistics on Impact
     </h1>
   );
@@ -74,7 +86,7 @@ function SubHeader2() {
  */
 function Other() {
   return (
-    <p style={{color:"black", margin: '10px'}} className="font-mono font-semibold  mt-5">
+    <p style={{color:"black", margin: '10px'}} className={`text-1.7xl tracking-widest leading-loose text-black ${lato.className}`}>
       The organization has made more efforts in reducing global warning than any county 
       or state department. It has also had more success in reaching out to Latino landscapers, which 
       has been subsequently overlooked by other organizations. The organization has taken part in the 
@@ -86,7 +98,7 @@ function Other() {
 
 function Paragraph2() {
   return (
-    <p style={{color:"black", margin: '10px'}} className="font-mono font-semibold  mt-5">
+    <p style={{color:"black", margin: '10px'}} className={`text-1.7xl tracking-widest leading-loose text-black ${lato.className}`}>
       EcoLatinos has done culturally sensitive work with Spanish-speaking residents of the Chesapeake Bay region and 
       has built a bridge that unites Hispanics and other environmentalists. The organization has encouraged members to enjoy 
       nature while keeping waterways free of trash. 
@@ -111,7 +123,7 @@ function GridHeading() {
   return (
     <div className="container4" style={{margin: '22.5px'}}>
       <p>
-        <span className="font-mono text-4xl text-black-500 relative font-semibold"> 
+        <span className={`text-4xl eco-greentext ${poppins.className}`}> 
           EcoLatinos by the numbers
         </span>
       </p>

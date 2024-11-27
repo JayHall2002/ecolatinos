@@ -1,4 +1,16 @@
 import "./StatusGrid.css"
+import { Lato } from "next/font/google";
+import { Poppins } from "next/font/google";
+const lato = Lato({
+  weight: "400",
+  subsets: ["latin"],
+});
+
+// Header font size.
+const poppins = ({
+  weight: "900",
+  subsets: ['latin'],
+});
 
 /**
  * This function returns a block that displays important vaccination statistics onto a webpage. The blocks
@@ -14,28 +26,28 @@ function StatusGrid() {
             <div id="w-node-_6d714e7a-c8bc-f423-083e-8c24b51ce591-2a77ae5b" className="stats-block bg-rnd-dark-red">
               {/* Display the numerical text contained in div. */}
               <div className="stats-number">
-                <div>150</div>
+                <div className={`text-1.7xl tracking-widest leading-loose text-white ${poppins.className}`}>150</div>
               </div>
               {/* Create a divider and display the other information relating to the numertical statistic. */}
               <div className="stats-block-divider bg-rnd-yellow"></div>
-              <p>Students took part in the Youth Environmental Summer Camp</p>
+              <p className={`text-3xl tracking-widest leading-loose text-white ${lato.className}`}>Students took part in the Youth Environmental Summer Camp</p>
             </div>
           
             <div id="w-node-_6d714e7a-c8bc-f423-083e-8c24b51ce599-2a77ae5b" className="stats-block bg-rnd-green">
               <div className="stats-number">
                 <div className="white-text">34</div>
               </div><div className="stats-block-divider bg-rnd-aqua"></div>
-              <p>Out of 100 people participated and registered for the 
+              <p className={`text-3xl tracking-widest leading-loose text-white ${lato.className}`}>Out of 100 people participated and registered for the 
                 Equitable Landscaping Program
               </p>
             </div>
     
             <div id="w-node-_6d714e7a-c8bc-f423-083e-8c24b51ce5a1-2a77ae5b" className="stats-block bg-rnd-blue">
               <div className="stats-number">
-                <div>5000</div>
+                <div className={`text-1.7xl tracking-widest leading-loose text-white ${poppins.className}`}>5000</div>
               </div>
               <div className="stats-block-divider bg-rnd-dark-red"></div>
-              <p className="white-text">Parishioners from churches in Langley Park, Hyattsville, Silver Spring, Wheaton, and Adelphi have engaged 
+              <p className={`text-3xl tracking-widest leading-loose text-white ${lato.className}`}>Parishioners from churches in Langley Park, Hyattsville, Silver Spring, Wheaton, and Adelphi have engaged 
                 with EcoLatinos
               </p>
             </div>
@@ -47,7 +59,7 @@ function StatusGrid() {
               </div>
               {/* Divider and paragraph. */}
               <div className="stats-block-divider bg-rnd-dark-red"></div>
-              <p>Has been received in donations from partnerships</p>
+              <p className={`text-3xl tracking-widest leading-loose text-white ${lato.className}`}>Has been received in donations from partnerships</p>
             </div>
     
             <div id="w-node-_6d714e7a-c8bc-f423-083e-8c24b51ce5b1-2a77ae5b" className="stats-block bg-rnd-blue">
@@ -55,14 +67,14 @@ function StatusGrid() {
                 <div>1400</div>
               </div>
               <div className="stats-block-divider bg-rnd-yellow"></div>
-              <p>Students have interacted with EcoLatinos through the summer camp and After School programs</p>
+              <p className={`text-3xl tracking-widest leading-loose text-white ${lato.className}`}>Students have interacted with EcoLatinos through the summer camp and After School programs</p>
             
             </div>
             <div id="w-node-_6d714e7a-c8bc-f423-083e-8c24b51ce5b9-2a77ae5b" className="stats-block bg-rnd-dark-red">
               <div className="stats-number">
                 <div>25</div></div>
               <div className="stats-block-divider bg-rnd-aqua"></div>
-              <p>Events have been hosted by EcoLatinos throughout the DMV area</p>  
+              <p className={`text-3xl tracking-widest leading-loose text-white ${lato.className}`}>Events have been hosted by EcoLatinos throughout the DMV area</p>  
             </div>
           </div>
       );

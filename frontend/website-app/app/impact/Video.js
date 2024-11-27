@@ -1,6 +1,21 @@
 import React from 'react'
 import "./VideoStyles.css"
 import Link from "next/link";
+import { Poppins } from "next/font/google";
+import { Lato } from 'next/font/google';
+
+
+const poppins = Poppins({
+  weight: "900",
+  subsets: ['latin'],
+});
+
+const lato = Lato({
+  weight: "400",
+  subsets: ["latin"],
+});
+
+
 
 const Video = () => {
   return (
@@ -12,8 +27,8 @@ const Video = () => {
                 {/* The code below adds a heading and a brief paragraph below. */}
         </video>
         <div className='content'>
-                <h1 style={{color:"white", margin: '10px'}} className='font-mono font-semibold  mt-5'>Environment.Preservation.</h1>
-                <p style={{color:"white", margin: '10px'}} className='font-mono font-semibold  mt-5'>The organization that's most concerned with the Environment</p>
+                <h1 style={{color:"white", margin: '10px'}} className={`text-2xl tracking-widest leading-loose text-white ${poppins.className}`}>Environment.Preservation.</h1>
+                <p style={{color:"white", margin: '10px'}} className={`text-2xl tracking-widest leading-loose text-white ${poppins.className}`}>The organization that's most concerned with the Environment</p>
         </div>
     </div>
   )

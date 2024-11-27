@@ -1,8 +1,14 @@
 import React from "react";
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, BarElement, Title, Tooltip, Legend, Filler, plugins, } from "chart.js";
 import { Bar } from "react-chartjs-2";
-
+import { Lato } from 'next/font/google';
 ChartJS.register(CategoryScale, LinearScale, PointElement, BarElement, Title, Tooltip, Legend, Filler );
+
+const lato = Lato({
+    weight: "400",
+    subsets: ["latin"],
+  });
+  
 
 // This Bar chart renders data from a Pew Research Survey that shows that Latinos are more concerned 
 // about the environment than any other population.
@@ -80,7 +86,7 @@ const MyBarChart = () => {
             },
             title: {
                 display: true,
-                text: "Hispanics see more environmental problems in their communities than non-Hispanics",
+                text: "Latinos are the most concerned about environmental issues",
                 font: {
                     size: 18, 
                 },
@@ -96,7 +102,7 @@ const MyBarChart = () => {
     };
     // Display the Bar chart to screen.
     return (
-        <div style={{display: 'flex', width: '1200px', height: '800px', margin: "360px", marginBottom: "6.5px"}}>
+        <div style={{display: 'flex', width: '1200px', height: '800px', margin: "360px", marginBottom: "6.5px"}} className={`text-2xl tracking-widest leading-loose text-white ${lato.className}`}>
             <Bar data={data} options={options} />
         </div>
     );
