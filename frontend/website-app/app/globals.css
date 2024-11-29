@@ -3,6 +3,34 @@
 @tailwind utilities;
 
 
+/* Define a class for the blue background */
+.blue-row {
+    background-color: #3c5494; /* Set background color */
+    width: 100%; /* Ensure it spans the full width of the row */
+    display: flex; /* Flexbox ensures children align properly */
+    justify-content: center; /* Optional: Align children horizontally */
+    align-items: center; /* Optional: Align children vertically */
+    padding: 16px; /* Optional: Add some padding */
+    box-sizing: content-box; /* Include padding in width/height calculations */
+  }
+
+.eco-greentext {
+  color: #3CB434;
+}
+
+.eco-bluetext {
+  color: #3c5494;
+}
+
+.eco-tealtext {
+  color: #5bc0d3;
+}
+.eco-darkgreentext {
+  color: #2e8928;
+}
+.eco-graytext {
+  color: #b0a8b9;
+}
 
   
 

@@ -102,7 +102,7 @@ body {
     .carousel-title {
         font: "mono";
         font-size: 2rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
         text-align: center;
         margin: '10px';
     }
@@ -115,4 +115,7 @@ body {
     border: none;
     padding: 15px;
     background-color: blueviolet;
+
 }
+
+
