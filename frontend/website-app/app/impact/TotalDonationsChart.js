@@ -1,5 +1,21 @@
 import { Pie } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Poppins } from "next/font/google";
+import { Lato } from 'next/font/google';
+
+
+const poppins = Poppins({
+  weight: "900",
+  subsets: ['latin'],
+});
+
+const lato = Lato({
+  weight: "400",
+  subsets: ["latin"],
+});
+
+
+
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -62,7 +78,7 @@ const TotalDonationsChart = () => {
     };
 
     return (
-        <div style={{display: 'flex', alignItems: 'center', width: '1200px', height: '800px', margin: "360px"}}>
+        <div style={{display: 'flex', alignItems: 'center', width: '1200px', height: '800px', margin: "360px"}} className={`text-2xl tracking-widest leading-loose text-white ${lato.className}`}>
             <Pie data={data} options={options}/>
         </div>
       
