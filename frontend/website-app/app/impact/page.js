@@ -29,6 +29,7 @@ export default function Impact() {
             {/* Render the video on landscaping onto the page. */}
             <Video />
 
+            <SubHeader1 />
             {/* Render the first paragraph of the introduction */}
             <Paragraph1 />
 
@@ -49,6 +50,15 @@ export default function Impact() {
         </>
     );
 };
+
+function SubHeader1() {
+  return (
+    <h1 className={`text-4xl eco-greentext ${poppins.className}`}>
+      Overview
+    </h1>
+  );
+}
+
 
 // Introduction paragraphs for the Impact page.
 /**
