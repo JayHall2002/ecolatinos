@@ -20,4 +20,20 @@ Run the devlopment server by typing "npm run dev" in the terminal
 ## Fourth
 Go to your browser of choice and type "localhost:3000"
 
+# Home Page
+This page contains the homepage of the entire website that contains a brief description of the organization's mission and the programs
+that it supports. 
+
+For all the programs of the organization, there is a Learn More button that gives the user a brief description of the program upon clicking.
+
+# About Us Page
+This page contains details on EcoLatinos' mission, what they have been up to on Social Media amd their Executive leadership team. 
+
+# Support Us page
+
+# Contact Us Page
+
+# Our Impact Page
+
+
 ## Happy Coding 
