@@ -6,8 +6,11 @@ This project will consist of four Pages: 
 - Our Work
 - Donations :)
     - team of 4
+
+
 This project will modify the website in such a way that the current state of the website is reflected 
 from EcoLatinos' social media feeds.
+
 # How to Run the Code
 ## First
 Navigate to the "webiste-app" directory
