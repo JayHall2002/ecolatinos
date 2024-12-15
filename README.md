@@ -4,8 +4,10 @@ This project will consist of four Pages: 
 - About Us
 - Impact Page
 - Our Work
-- Donations :)
-    - team of 4
+- Donations 
+:)
+    
+- team of 4
 
 
 This project will modify the website in such a way that the current state of the website is reflected 
