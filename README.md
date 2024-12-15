@@ -6,8 +6,10 @@ This project will consist of four Pages: 
 - Our Work
 - Donations 
     
-Team of 4
 
+
+
+Team of 4
 
 This project will modify the website in such a way that the current state of the website is reflected 
 from EcoLatinos' social media feeds.
